@@ -1,25 +1,17 @@
 <template>
     <header  @scroll="handleScroll" :class="{show : scrolled}">
         <div class="logo-wrap" :class="theme">
-            <div class="logo-bright-park">
+            <div class="logo-karlsson">
                 <a id="header_sticky_logo" class="event" :href="'/' + city">
-                    <logo-bright-park :theme="theme"></logo-bright-park>
+                    <logo-karlsson :theme="theme"></logo-karlsson>
                 </a>
-            </div>
-            <div class="model-button" v-if="button">
-                <span>{{car.reduction}}</span> <a id="header_sticky_btn_buy" class="event btn-small" :href="car.link">Купить</a>
-            </div>
-
-            <div class="logo-lada" v-if="!button">
-                <logo-lada :theme="theme"></logo-lada>
             </div>
         </div>
     </header>
 </template>
 
 <script>
-    import LogoBrightPark from '../icons/header/LogoBrightParkMobile.vue';
-    import LogoLada from '../icons/header/LogoLada.vue';
+    import LogoKarlsson from '../icons/header/LogoKarlsson.vue';
 
     export default {
         name: "App",
@@ -28,10 +20,6 @@
                 default: 'light',
                 type: String
             },
-            line: {
-                default: true,
-                type: Boolean
-            },
             absolute: {
                 default: false,
                 type: Boolean
@@ -39,13 +27,6 @@
             city: {
                 type: String
             },
-            button: {
-                default: false,
-                type: Boolean
-            },
-            car: {
-                type: Object
-            }
         },
         data: function () {
             return {
@@ -58,8 +39,7 @@
             }
         },
         components: {
-            LogoBrightPark,
-            LogoLada
+            LogoKarlsson,
         },
         created () {
             window.addEventListener('scroll', this.handleScroll);
@@ -113,7 +93,7 @@
             max-width: 960px;
             margin: 0 auto;
 
-            .logo-bright-park {
+            .logo-karlsson {
                 width: 35%;
                 height: 25px;
                 display: flex;
@@ -128,46 +108,10 @@
                 }
             }
 
-            .logo-lada {
-                width: 16%;
-                height: 20px;
-                display: flex;
-                justify-content: flex-end;
-                align-items: center;
-            }
 
             @media only screen and (min-width: 1366px) {
-                .logo-bright-park {
+                .logo-karlsson {
                     width: 25%;
-                }
-                .logo-lada {
-                    width: 16%;
-                }
-            }
-
-            .model-button {
-                width: 60%;
-                height: 25px;
-                display: flex;
-                justify-content: flex-end;
-                align-items: center;
-
-                span {
-                    display: inline-block;
-                    font-weight: bold;
-                    font-size: 14px;
-                    margin-right: 10px;
-                    margin-top: 2px;
-                }
-
-                a {
-                    background-color: #FF8351;
-                    color: #fff;
-                    font-size: 14px;
-                    padding: 7px 15px 3px;
-                    border-radius: 20px;
-                    display: inline-block;
-                    text-transform: uppercase;
                 }
             }
 
@@ -189,36 +133,13 @@
                 max-width: 1200px;
                 padding: 16px 15px 13px;
 
-                .logo-bright-park {
+                .logo-karlsson {
                     height: 30px;
                 }
 
                 .logo-wrap-row {
                     padding: 20px 0 0;
                 }
-
-                .model-button {
-                    height: 30px;
-
-                    span {
-                        font-size: 16px;
-                    }
-                }
-            }
-        }
-
-        .lada-line {
-            background: url(/build/images/lada_line.svg) no-repeat;
-            width: 100%;
-            height: 100%;
-            min-height: 31px;
-            background-size: 101%;
-
-            p {
-                padding-top: 15px;
-                padding-right: 15px;
-                text-align: right;
-                font-weight: bold;
             }
         }
     }
