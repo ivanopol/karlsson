@@ -1,0 +1,24 @@
+<template>
+    <div class="route-desktop">
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve"  width="52px" height="52px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+             viewBox="0 0 2.47 2.47"
+             xmlns:xlink="http://www.w3.org/1999/xlink">
+
+            <g id="route-desktop-wrapper">
+                <metadata id="route-desktop-layer"/>
+                <path class="fil0" d="M1.24 0c0.68,0 1.23,0.55 1.23,1.24 0,0.68 -0.55,1.23 -1.23,1.23 -0.69,0 -1.24,-0.55 -1.24,-1.23 0,-0.69 0.55,-1.24 1.24,-1.24zm0 2.13l0 0c0.01,0 0.03,-0.01 0.04,-0.02 0.13,-0.22 0.54,-0.92 0.54,-1.19 0,-0.32 -0.26,-0.58 -0.58,-0.58 -0.33,0 -0.59,0.26 -0.59,0.58 0,0.27 0.41,0.97 0.55,1.19 0.01,0.01 0.02,0.02 0.04,0.02zm-0.29 -1.21c0,-0.15 0.12,-0.28 0.28,-0.28 0.15,0 0.28,0.12 0.28,0.28 0,0.15 -0.12,0.28 -0.28,0.28 -0.16,0 -0.28,-0.12 -0.28,-0.28z"/>
+            </g>
+        </svg>
+    </div>
+</template>
+
+<script>
+    export default {
+    }
+</script>
+
+<style lang="scss" scoped>
+    .fil0 {
+        fill:#EBECEC
+    }
+</style>

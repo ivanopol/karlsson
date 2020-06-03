@@ -1,0 +1,28 @@
+// Typography
+$font-family-sans-serif: 'Nunito', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// Colors
+$bg_dark_desktop: #000;//#2b2a28;
+
+
+// context
+$context: 375;
+
+@media only screen and (max-width: 321px) {
+    $context: 320;
+}
+
+@media only screen and (max-width: 375px) {
+    $context: 375;
+}
+
+@media only screen and (max-width: 414px) {
+    $context: 414;
+}
+
+@function get-vw($target, $context) {
+    $vw-context: ($context*.01) * 1px;
+    @return ($target/$vw-context) * 1vw;
+}

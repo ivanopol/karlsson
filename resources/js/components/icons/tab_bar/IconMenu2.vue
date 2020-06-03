@@ -1,0 +1,38 @@
+<template>
+    <div class="menu">
+        <!-- Generator: Adobe Illustrator 23.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+        <svg version="1.1" id="Menu" v-bind:class="[ theme ]"  class="menu_wrap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             viewBox="0 0 584 508" style="enable-background:new 0 0 584 508;" xml:space="preserve">
+            <title>menu_icon</title>
+            <g>
+                <path class="cls-1" d="M578.2,474.1L434.9,330.8c64.8-78.7,61.7-196.5-13.4-271.6c-78.9-78.9-207.3-78.9-286.2,0c-79.1,79.1-79.1,207.2,0,286.3
+                    c74.2,74.2,192.1,78.7,271.5,13.3l143.3,143.3c7.7,7.8,20.3,7.8,28.1,0C585.9,494.4,585.9,481.9,578.2,474.1z M393.5,317.4
+                    c-63.4,63.5-166.7,63.5-230.1,0c-63.6-63.6-63.6-166.6,0-230.2c63.4-63.5,166.7-63.5,230.1,0C457.1,150.9,457.1,253.8,393.5,317.4
+                    z"/>
+                <path class="cls-1" d="M51.5,194.5H15.5C6.9,194.5,0,201.5,0,210c0,8.5,6.9,15.5,15.5,15.5h36.1c8.5,0,15.5-6.9,15.5-15.5
+                    S60.1,194.5,51.5,194.5z"/>
+                <path class="cls-1" d="M81.5,70.8H16.5C7.9,70.8,1,77.7,1,86.3s6.9,15.5,15.5,15.5h65.1c8.5,0,15.5-6.9,15.5-15.5S90.1,70.8,81.5,70.8z"/>
+                <path class="cls-1" d="M86.5,318.3H16.5c-8.5,0-15.5,6.9-15.5,15.5c0,8.5,6.9,15.5,15.5,15.5h70.1c8.5,0,15.5-6.9,15.5-15.5
+                    C102,325.2,95.1,318.3,86.5,318.3z"/>
+            </g>
+        </svg>
+    </div>
+</template>
+
+<script>
+    export default {
+        props: [
+            'theme'
+        ]
+    }
+</script>
+
+<style lang="scss" scoped>
+    .dark .cls-1 {
+        fill: #fff;
+    }
+
+    .light .cls-1 {
+        fill: #000;
+    }
+</style>

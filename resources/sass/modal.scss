@@ -1,0 +1,20 @@
+.v--modal-overlay {
+    .v--modal {
+        border-radius: 30px;
+      //  max-width: 500px;
+
+        .close {
+            right: 12px;
+            top: 10px;
+        }
+    }
+
+    @media only screen and (max-width: 580px) {
+        .v--modal {
+            border-radius: 15px;
+            width: 90vw;
+            max-width: 90%;
+            margin: 0 auto;
+        }
+    }
+}

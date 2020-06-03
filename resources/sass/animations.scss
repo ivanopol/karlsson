@@ -1,0 +1,22 @@
+@keyframes animationDetails {
+    0% {
+        bottom: -15px;
+    }
+    50% {
+        bottom: -18px;
+    }
+    100% {
+        bottom: -15px;
+    }
+}
+
+
+@keyframes slidein {
+    from {
+        left: 150%;
+    }
+
+    to {
+        left: 0;
+    }
+}

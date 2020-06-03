@@ -1,0 +1,17 @@
+FROM php:7.2.5-fpm
+
+RUN apt-get update \
+	&& apt-get install -y libmcrypt-dev mysql-client zip unzip \
+	&& rm -rf /var/lib/apt/lists/* \
+	&& pecl install mcrypt-1.0.1 \
+	&& pecl install redis \
+	&& docker-php-ext-enable mcrypt \
+	&& docker-php-ext-enable redis
+RUN docker-php-ext-install pdo_mysql
+RUN curl -sS https://getcomposer.org/installer | php -- \
+        --filename=composer \
+        --install-dir=/usr/local/bin && \
+        echo "alias composer='composer'" >> /root/.bashrc && \
+        composer
+
+WORKDIR /var/www

@@ -1,0 +1,333 @@
+@import "_variables.scss";
+
+.change-color {
+    background-color: #000;
+    padding-bottom: 30px;
+    margin-top: 30px;
+
+    h2 {
+        color: #fff;
+        text-align: center;
+
+        span {
+            display: inline;
+        }
+    }
+
+    .color-name {
+        color: #FF8351;
+        margin: 0 0 40px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .car-color {
+        position: relative;
+        text-align: center;
+        margin-bottom: 20px;
+
+        img {
+            width: 80vw;
+            max-width: 614px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .backlight {
+
+            background: radial-gradient(ellipse, rgba(255, 255, 255, 0.111) 45%, rgba(255, 254, 255, 0) 80%),
+                        radial-gradient(ellipse, rgba(255, 255, 255, 0.08) 25%, rgba(255, 255, 255, 0) 45%),
+                        radial-gradient(ellipse, rgba(255, 255, 255, 0.15) 18%, rgba(255, 255, 255, 0) 53%),
+                        radial-gradient(ellipse, rgba(255, 255, 255, 0.13) 30%, rgba(255, 255, 255, 0) 71%);
+            width: 100vw;
+            height: get-vw(220px, $context);
+            position: absolute;
+            top: -24px;
+            left: -10px;
+            right: 0;
+            bottom: 0;
+            margin: 0 auto;
+        }
+    }
+
+    .palette {
+        width: 100%;
+        max-width: 580px;
+        padding: 30px 30px 20px;
+        margin: 0 auto;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: space-between;
+
+            li {
+                width: 22%;
+                margin-bottom: 20px;
+                z-index: 10;
+
+                &.active div {
+                    box-shadow: none;
+                    border: 2px solid #fff;
+                }
+
+                &.active div.color-white-cloud {
+                    border: 2px solid #b5b5b5;
+                }
+
+                & > div {
+                    //box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.8);
+                    box-shadow: 0 0 9px 5px rgba(255, 255, 255, 0.4);
+                }
+
+                .circle {
+                    border-radius: 100px;
+                    width: get-vw(53px, $context);
+                    height: get-vw(53px, $context);
+                    max-width: 60px;
+                    max-height: 60px;
+                    margin: 0 auto;
+                }
+
+                .color- {
+                    &blue-planet {
+                        background-color: #0057ae;
+                    }
+
+                    &cornelian {
+                        background-color: #860e0c;
+                    }
+
+                    &white-cloud {
+                        background-color: #fefaf4;
+                    }
+
+                    &panther {
+                        background-color: #161313;
+                    }
+
+                    &riesling {
+                        background-color: #b4b2ae;
+                    }
+
+                    &techno {
+                        background-color: #aea297;
+                    }
+
+                    &borneo {
+                        background-color: #98a5ac;
+                    }
+
+                    &coriander {
+                        background-color: #857d7a;
+                    }
+
+                    &white-glacial {
+                        background-color: #ffffff;
+                    }
+
+                    &red-cornelian {
+                        background-color: #860E02;
+                    }
+
+                    &angkor {
+                        background-color: #3F3A32;
+                    }
+
+                    &carfagen {
+                        background-color: #E8E5CD;
+                    }
+
+                    &daiving {
+                        background-color: #1449BF;
+                    }
+
+                    &phantom {
+                        background-color: #686866;
+                    }
+
+                    &pluton {
+                        background-color: #515958;
+                    }
+
+                    &maestro {
+                        background-color: #111112;
+                    }
+
+                    &platina {
+                        background-color: #C3C4C4;
+                    }
+
+                    &fiery-red {
+                        background-color: #DA0F23;
+                    }
+
+                    &basalt-gray {
+                        background-color: #A8B9A0;
+                    }
+
+                    &light-brown-cougar {
+                        background-color: #986F59;
+                    }
+
+                    &black-pearl {
+                        background-color: #1C1D1A;
+                    }
+
+                    &platina {
+                        background-color: #C3C4C4;
+                    }
+
+                    &white-cloud {
+                        background-color: #FEFAF4;
+                    }
+
+                    &nessi-2 {
+                        background-color: #112717;
+                    }
+
+                    &panthera {
+                        background-color: #161313;
+                    }
+
+                    &benefis {
+                        background-color: #430D45;
+                    }
+
+                    &barokko {
+                        background-color: #850D34;
+                    }
+
+                    &terra {
+                        background-color: #6C2003;
+                    }
+
+                    &borneo-dark {
+                        background-color: #444E4E;
+                    }
+
+                    &snow-queen {
+                        background-color: #D0D8E2;
+                    }
+
+                    &coriander-dark {
+                        background-color: #706c62;
+                    }
+
+                    &camouflage-jungle {
+                        background-color: #1E4526;
+                    }
+                    &sky-blue {
+                        background-color: #1279BC;
+                    }
+                    &cashemer {
+                        background-color: #311500;
+                    }
+                    &amber {
+                        background-color: #FF9225;
+                    }
+                    &mars {
+                        background-color: #CB390A;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 580px) {
+    .change-color .block-text {
+        h2 {
+            margin-bottom: 34px;
+        }
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .change-color {
+        background-color: $bg_dark_desktop;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        &-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .block-text,
+        .color-name {
+            width: 67%;
+            margin-left: 0;
+            padding-left: 4%;
+        }
+
+        .block-text {
+            h2 {
+                color: #fff;
+                text-align: left;
+                margin-bottom: 34px;
+
+                span {
+                    display: inline;
+                }
+            }
+        }
+
+        .color-name {
+            font-size: 30px;
+            text-align: left;
+        }
+
+        .car-color {
+            .backlight {
+                background: radial-gradient(ellipse, rgba(255, 255, 255, 0.051) 45%, rgba(255, 254, 255, 0) 70%),
+                radial-gradient(ellipse, rgba(255, 255, 255, 0.15) 25%, rgba(255, 255, 255, 0) 56%),
+                radial-gradient(ellipse, rgba(255, 255, 255, 0.25) 18%, rgba(255, 255, 255, 0) 47%),
+                radial-gradient(ellipse, rgba(255, 255, 255, 0.2) 30%, rgba(255, 255, 255, 0) 40%);
+
+                width: 100vw;
+                max-width: 815px;
+                height: get-vw(200px, $context);
+                max-height: 490px;
+                position: absolute;
+                top: -85px;
+                left: -45px;
+                right: 0;
+                bottom: 0;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1367px) {
+    .change-color {
+        .color-name {
+            width: 50%;
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .change-color {
+        .palette {
+            max-width: 980px;
+            margin-bottom: 30px;
+            ul{
+                justify-content: center;
+                li {
+                    width: 9.6%;
+                    margin: 0 0 20px 0;
+                    .circle {
+
+                        max-width: 60px;
+                        max-height: 60px;
+                    }
+                }
+            }
+        }
+    }
+}

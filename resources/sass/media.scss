@@ -1,0 +1,56 @@
+@media only screen and (max-width: 321px) {
+    body {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+
+    .block {
+        h2 {
+            margin-bottom: 16px;
+            line-height: 1.2;
+        }
+
+        p {
+            line-height: 1.3;
+            margin-bottom: 35px;
+        }
+
+        &-text {
+            padding: 25px 25px 0;
+            font-size: 15px;
+            p.note_1 {
+                margin-bottom: 15px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .change-color .palette ul li .circle {
+        width: 14vw;
+        height: 14vw;
+    }
+
+    .change-color .palette {
+        padding: 30px 40px 40px;
+    }
+}
+
+
+/*
+@media only screen and (min-width: 400px) {
+    .change-color .palette ul li .circle {
+        margin: 5px 5px 10px 5px;
+    }
+}
+
+@media only screen and (min-width: 400px) {
+    .change-color .palette ul li .circle {
+        margin: 5px 5px 10px 5px;
+    }
+}
+*/

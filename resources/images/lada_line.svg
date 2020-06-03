@@ -1,0 +1,21 @@
+<svg id="line" data-name="line" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="778" height="40" viewBox="0 0 778 40">
+    <defs>
+        <style>
+            .cls-1 {
+            fill: url(#gradient);
+            }
+            .cls-0 {
+            fill: #ffffff;
+            }
+        </style>
+        <linearGradient id="gradient" data-name="gradient градиент 6"  gradientUnits="userSpaceOnUse">
+            <stop offset="0.18" stop-color="#f57f32"/>
+            <stop offset="0.82" stop-color="#fba92f"/>
+        </linearGradient>
+    </defs>
+    <title>lada_line</title>
+    <g>
+    <polygon class="cls-0" points="0 0, 0 0, 778 0, 778 2, 0 29"/>
+    <polygon class="cls-1" points="0 40 0 27 778 0 778 3 0 40"/>
+    </g>
+</svg>

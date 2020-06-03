@@ -1,0 +1,13 @@
+#Yandex
+User-agent: Yandex
+Disallow: /404
+Disallow: /*?*
+
+Sitemap: https://brightpark.ru/sitemap.xml
+
+# All
+User-agent: *
+Disallow: /404
+Disallow: /*?*
+
+Sitemap: https://brightpark.ru/sitemap.xml
