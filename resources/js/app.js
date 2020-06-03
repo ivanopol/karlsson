@@ -10,11 +10,11 @@
 window.Vue = require('vue');
 //window.Vuex = require('vuex');
 //import Vuex from 'vuex';
-//import VModal from 'vue-js-modal';
+import VModal from 'vue-js-modal';
 /*import VueAwesomeSwiper from 'vue-awesome-swiper';
 import 'swiper/css/swiper.css'*/
 
-//Vue.use(VModal);
+Vue.use(VModal);
 //Vue.use(VueAwesomeSwiper, /* { default options with global component } */)
 //Vue.use(Vuex);
 /**
@@ -66,6 +66,21 @@ Vue.component('our-services', require('./components/service/OurServices').defaul
 Vue.component('footer-component', require('./components/elements/FooterComponent').default);
 Vue.component('banks-component', require('./components/service/BanksComponent').default);
 */
+Vue.component('tab-bar', require('./components/elements/TabBar').default);
+Vue.component('header-sticky-component', require('./components/elements/HeaderStickyComponent').default);
+Vue.component('header-component', require('./components/elements/HeaderComponent').default);
+Vue.component('banner-component', require('./components/elements/BannerComponent').default);
+Vue.component('advantages-component', require('./components/AdvantagesComponent').default);
+Vue.component('form-component', require('./components/forms/FormComponent.vue').default);
+Vue.component('car-logos', require('./components/service/CarLogos').default);
+Vue.component('our-services', require('./components/service/OurServices').default);
+Vue.component('trust-us', require('./components/service/TrustUs').default);
+Vue.component('review-service', require('./components/service/ReviewService').default);
+Vue.component('form-retarget-component', require('./components/forms/FormRetargetComponent.vue').default);
+Vue.component('footer-component', require('./components/elements/FooterComponent').default);
+Vue.component('scroll-event-handler-component', require('./components/ScrollEventHandlerComponent').default);
+Vue.component('event-handler-component', require('./components/EventHandlerComponent').default);
+Vue.component('form-buy2-component', require('./components/forms/FormBuy2Component.vue').default);
 
 /*const store = new Vuex.Store({
     state: {
