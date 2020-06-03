@@ -13,5 +13,6 @@
 
 Route::get('send', 'FeedbackController@send');
 Route::middleware(['utm.check', 'cookie.check', 'counter'])->group(function () {
+    Route::get('/{city}/privacy', 'HomeController@privacy')->name('privacy');
     Route::get('/{city?}', 'HomeController@index')->name('index');
 });
