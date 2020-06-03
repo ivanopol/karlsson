@@ -18,8 +18,7 @@ Vue.component('footer-component', require('./components/elements/FooterComponent
 Vue.component('scroll-event-handler-component', require('./components/ScrollEventHandlerComponent').default);
 Vue.component('event-handler-component', require('./components/EventHandlerComponent').default);
 Vue.component('form-buy2-component', require('./components/forms/FormBuy2Component.vue').default);
-
-
+Vue.component('yandex-map-component', require('./components/YandexMapComponent').default);
 
 const app = new Vue({
     el: '#app'
