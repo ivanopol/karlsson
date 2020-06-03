@@ -15,7 +15,7 @@
                               :button="ym_button"
                               :btn_class="ym_btn_class"
         ></yandex-map-component>
-        <modal name="form-callback3" height="auto" :adaptive="true">
+        <modal name="form-callback-footer" height="auto" :adaptive="true">
             <div class="close" @click="hide"></div>
             <form-buy2-component :cities="cities"
                                  :form_title="form_title"
@@ -80,13 +80,13 @@
                 this.button_text = button_text;
                 this.form_type = form_type; // 1 - обычная форма, 2 - форма сервиса
                 this.goal = goal;
-                this.$modal.show('form-callback3');
+                this.$modal.show('form-callback-footer');
                 () => {
                     callibriInit();
                 }
             },
             hide () {
-                this.$modal.hide('form-callback3');
+                this.$modal.hide('form-callback-footer');
             },
             sendGoals: function (goal) {
                 if (goal) {
@@ -130,7 +130,7 @@
 
     @media only screen and (min-width: 1366px) {
         .block {
-            display: unset;
+           // display: unset;
         }
     }
 
