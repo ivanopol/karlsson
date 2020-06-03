@@ -26,8 +26,7 @@ mix
     .setPublicPath('public/build')
     .setResourceRoot('build')
     .js('resources/js/app.js', 'js')
-   // .sass('resources/sass/app.scss', 'css/app.css')
-    .sass('resources/sass/app2.scss', 'css/app2.css')
+    .sass('resources/sass/app.scss', 'css/app.css')
     .version().browserSync({
         open: false,
         watchTask: true,

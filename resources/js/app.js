@@ -10,11 +10,11 @@
 window.Vue = require('vue');
 //window.Vuex = require('vuex');
 //import Vuex from 'vuex';
-import VModal from 'vue-js-modal';
+//import VModal from 'vue-js-modal';
 /*import VueAwesomeSwiper from 'vue-awesome-swiper';
 import 'swiper/css/swiper.css'*/
 
-Vue.use(VModal);
+//Vue.use(VModal);
 //Vue.use(VueAwesomeSwiper, /* { default options with global component } */)
 //Vue.use(Vuex);
 /**
@@ -28,6 +28,7 @@ Vue.use(VModal);
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
+/*
 Vue.component('hooper-component', require('./components/HooperComponent.vue').default);
 Vue.component('info-component', require('./components/InfoComponent.vue').default);
 Vue.component('color-choose-component', require('./components/ColorChooseComponent.vue').default);
@@ -64,6 +65,7 @@ Vue.component('car-logos', require('./components/service/CarLogos').default);
 Vue.component('our-services', require('./components/service/OurServices').default);
 Vue.component('footer-component', require('./components/elements/FooterComponent').default);
 Vue.component('banks-component', require('./components/service/BanksComponent').default);
+*/
 
 /*const store = new Vuex.Store({
     state: {

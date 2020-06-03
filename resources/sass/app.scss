@@ -1,8 +1,7 @@
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import './node_modules/reset-css/sass/reset';
 
-// Variables
-@import 'variables';
-
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
+// Styles
+@import 'fonts';
+@import 'style';
+@import 'media';
+@import 'animations';
