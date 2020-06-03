@@ -1,0 +1,36 @@
+<template>
+    <svg id="logo-karlsson" class="logo-karlsson-svg" v-bind:class="[ theme ]" data-name="logo_karlsson" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 33"><path d="M284.8 27.4c-1.7 0-3.2-1.4-3.2-3.2V8.8c0-1.8 1.5-3.2 3.2-3.2h14.5V.2h-22.2c-3.6 0-6.5 2.9-6.5 6.5v19.7c0 3.6 2.9 6.5 6.5 6.5h22.2v-5.4c0-.1-14.5-.1-14.5-.1z" fill="#f7b21d"/><path fill="#c42732" d="M20.9 32.8h10.7L18.8 15.3 29.8.2H20L10.6 13V.3H0v2h1.7v30.5h8.9V18.9z"/><path d="M57.3 21.2l6.4-10.4 6.4 10.4H57.3zm19.9 11.6h11L66.4.3h-9.3L59 3.2 39.2 32.8h11l3.3-5.5h20.4l3.3 5.5z" fill="#e22227"/><path d="M119 18.8h-12.2V4H119c6.7 0 12.2 3.3 12.2 7.4s-5.5 7.4-12.2 7.4zm.4-18.5H97.9v32.6h8.9V22.5h12.6c12 0 21.8-5 21.8-11.1S131.4.3 119.4.3z" fill="#2e3256"/><path fill="#313e86" d="M194.9 28.4L180 .2h-18.2l-15 28.2h-7.3v4.4h22.4v-4.4h-6.4l10.8-20.3 11.8 20.3h-8.5v4.4h32.6v-4.4z"/><path d="M220.7 25.4c-1.2 0-2.2-1-2.2-2.2V9.9c0-1.3 1-2.3 2.2-2.3h37.8V.2h-41.6c-3.3 0-6 2.7-6 6v20.6c0 3.3 2.7 6 6 6h41.6v-7.5h-37.8v.1z" fill="#ae2929"/><path d="M343.3 21.1c0 2.2-1.8 3.9-4 3.9h-16.4c-2.2 0-3.9-1.7-3.9-3.9V12c0-2.2 1.7-3.9 3.9-3.9h16.4c2.2 0 4 1.7 4 3.9v9.1zm.3-20.8h-24.9c-5 0-9 4.1-9 9v14.5c0 5 4.1 9 9 9h24.9c5 0 8.9-4.1 8.9-9V9.4c.1-5-3.9-9.1-8.9-9.1z" fill="#c92629"/><path fill="#244c93" d="M390.4.2v11.3h-18V.2h-9.6v32.6h9.6V19.2h18v13.6h9.6V.2z"/></svg>
+</template>
+
+<script>
+    export default {
+        props: [
+            'theme'
+        ]
+    }
+</script>
+
+<style lang="scss" scoped>
+    .logo-karlsson-svg {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+    @media only screen and (min-width: 580px) {
+        .logo-karlsson-svg {
+            width: auto;
+            height: 100%;
+            display: block;
+        }
+    }
+
+    .dark .cls-1 {
+        fill: #fff;
+    }
+
+    .light .cls-1 {
+        fill: #000;
+    }
+</style>
+

@@ -2,36 +2,25 @@
     <header :class="[ absolute ? 'absolute' : '' ]">
         <div class="logo-wrap" :class="theme">
             <div class="container logo-wrap-row">
-                <div class="logo-bright-park">
+                <div class="logo-karlsson">
                     <a id="header_logo" class="event" :href="'/' + city">
-                        <logo-bright-park :theme="theme"></logo-bright-park>
+                        <logo-karlsson :theme="theme"></logo-karlsson>
                     </a>
                 </div>
-                <div class="logo-lada">
-                    <logo-lada :theme="theme"></logo-lada>
-                </div>
             </div>
-        </div>
-        <div class="lada-line" v-if="line">
-            <p id="model-active" v-if="car">{{car.reduction}}</p>
         </div>
     </header>
 </template>
 
 <script>
-    import LogoBrightPark from '../icons/header/LogoBrightPark.vue';
-    import LogoLada from '../icons/header/LogoLada.vue';
+    import LogoKarlsson from '../icons/header/LogoKarlsson.vue';
 
     export default {
-        name: "App",
+        name: "Header",
         props: {
             theme: {
                 default: 'light',
                 type: String
-            },
-            line: {
-                default: true,
-                type: Boolean
             },
             absolute: {
                 default: false,
@@ -40,10 +29,6 @@
             city: {
                 type: String
             },
-            car: {
-                default: null,
-                type: Object
-            }
         },
         data: function () {
             return {
@@ -51,8 +36,7 @@
             };
         },
         components: {
-            LogoBrightPark,
-            LogoLada
+            LogoKarlsson
         }
     }
 </script>
@@ -75,12 +59,12 @@
 
         .logo-wrap {
             .logo-wrap-row {
-                padding: 15px 15px 5px;
+                padding: 15px;
                 display: flex;
                 justify-content: space-between;
             }
 
-            .logo-bright-park {
+            .logo-karlsson {
                 width: 49%;
                 height: 25px;
                 display: flex;
@@ -99,21 +83,12 @@
                 }
             }
 
-            .logo-lada {
-                width: 16%;
-                height: 20px;
-                display: flex;
-                justify-content: flex-end;
-                align-items: center;
-            }
 
             @media only screen and (min-width: 1367px) {
-                .logo-bright-park {
+                .logo-karlsson {
                     width: 25%;
                 }
-                .logo-lada {
-                    width: 16%;
-                }
+
             }
 
             @media only screen and (min-width: 580px) and  (max-width: 890px) {
@@ -132,67 +107,13 @@
                 background-color: #fff;
             }
         }
-        .lada-line {
-            background: url(/build/images/lada-line.svg) no-repeat;
-            width: 100vw;
-            height: 40px;
-            margin-top: -2px;
-          //  background-position: 100% -85px;
-            position: absolute;
-            left: 0;
-
-            p {
-                padding: 20px 20px;
-                text-align: right;
-                font-weight: bold;
-            }
-        }
 
         @media only screen and (max-width: 321px) {
-
             .logo-wrap-row {
-                padding: 10px 10px 0 10px;
-            }
-
-            .lada-line {
-
-                p {
-                    padding: 20px 10px 0 0;
-                    font-size: 0.9rem;
-                }
+                padding: 10px;
             }
         }
 
-        @media only screen and (min-width: 580px) {
-            .lada-line {
-                height: 100px;
-                background: url(/build/images/lada-line.png) no-repeat;
-                background-position: 100% -85px;
-                p {
-                    padding-top: 30px;
-                    width: 100%;
-                    max-width: 960px;
-                    margin: 0 auto;
-                }
-            }
-        }
-
-        @media only screen and (min-width: 1367px) {
-            .lada-line {
-                background: url(/build/images/lada-line-big.svg) no-repeat top center;
-                background-position-x: -2px;
-                background-size: 101%;
-                max-width: 1980px;
-                right: 0;
-                margin-left: auto;
-                margin-right: auto;
-                p {
-                    padding-top: 35px;
-                    max-width: 1200px;
-                    margin: 0 auto;
-                }
-            }
-        }
     }
 
     @media only screen and (min-width: 580px) {
@@ -206,12 +127,12 @@
             margin-bottom: 70px;
 
             .logo-wrap {
-                .logo-bright-park {
+                .logo-karlsson {
                     height: 35px;
                 }
 
                 .logo-wrap-row {
-                    padding: 20px 0 0;
+                    padding: 20px 0;
                 }
             }
         }
