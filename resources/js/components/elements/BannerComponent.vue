@@ -10,7 +10,7 @@
         </div>
         <div class="banner-content bottom-left">
             <div class="banner-title-white">
-                <span>Сервис<br> Брайт Парка</span>
+                <span>Сервис<br> Карлссон</span>
             </div>
         </div>
     </section>
