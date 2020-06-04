@@ -156,7 +156,7 @@ $color-coral: #ff8250;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 17px 22px 13px;
+    padding: 23px 22px 21px;
     background: rgb(166,46,32);
     background: linear-gradient(90deg, rgba(166,46,32,1) 0%, rgba(225,34,41,1) 100%);
     border-radius: 6px;
@@ -379,9 +379,10 @@ form {
 
     textarea,
     input {
-        border: 2px solid #bdc3c7;
-        color: #000;
-        border-radius: 50px;
+        border: 2px solid #fff;
+        color: #fff;
+        background: none;
+        border-radius: 10px;
         margin-bottom: 15px;
         padding: 10px 12px;
         box-shadow: none;
@@ -411,7 +412,7 @@ form {
         text-transform: uppercase;
         border: none;
         border-radius: 6px;
-        padding: 17px 22px 13px;
+        padding: 23px 22px 21px;
         text-align: center;
         text-decoration: none;
         letter-spacing: 0.3px;
@@ -969,7 +970,7 @@ footer {
 
 
 .container_bg_dark {
-    background-color: #000;
+    background-color: #424242;
 
     p,
     .text,

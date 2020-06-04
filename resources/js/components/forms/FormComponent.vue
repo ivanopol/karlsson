@@ -1,8 +1,7 @@
 <template>
     <section :class="'block form inline-form ' + form_class">
-        <div class="block-text" v-if="form_h1">
-            <h2 v-html="form_h1"></h2>
-        </div>
+        <h2 v-html="form_h1" v-if="form_h1"></h2>
+
         <div class="form-wrapper">
             <p class="note_1" v-if="form_title">{{form_title}}</p>
             <form-common :cities="cities"
@@ -69,9 +68,9 @@
 <style lang="scss" >
     .inline-form {
         p.form-title {
-            color: #000;
+            color: #fff;
             margin-bottom: 30px;
-            font-family: PragmaticaLightCBold, Helvetica, sans-serif;
+            font-family: OpenSansExtraBold, Helvetica, sans-serif;
             text-transform: uppercase;
             text-align: center;
             font-size: 24px;
@@ -102,15 +101,17 @@
 
     @media only screen and (max-width: 580px) {
         .mobile_white_bg {
-            background: #fff;
-            padding: 40px 30px;
-            border-radius: 20px;
-            width: 90%;
-            max-width: 340px;
-            margin: 40px auto;
+            background: rgb(41,41,41);
+            background: linear-gradient(90deg, rgba(41,41,41,1) 0%, rgba(83,83,83,1) 100%);
+            padding: 9vw 0 7vw;
+            border-radius: 10px;
+            border: 6px solid #fff;
+            margin: 3.63vw;
 
             h2 {
-                color: #000;
+                color: #fff;
+                font-family: OpenSansExtraBold, Helvetica, sans-serif;
+                padding: 0 7.25vw; // 0 30px
             }
 
             .form-wrapper {
