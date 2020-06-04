@@ -64,7 +64,7 @@
             }
 
             .banner-title-white {
-                font-family: PragmaticaLightCBold, Helvetica, sans-serif;
+                font-family: OpenSansExtraBold, Helvetica, sans-serif;
                 font-weight: bold;
                 line-height: 1.4;
                 color: #fff;
