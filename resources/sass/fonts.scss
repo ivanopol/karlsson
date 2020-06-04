@@ -1,15 +1,35 @@
-
-
-/*@font-face {
-    font-family: "PragmaticaLightC";
-    src: url(/build/fonts/PragmaticaLightC/PragmaticaLightC.eot);
-    src: url(/build/fonts/PragmaticaLightC/PragmaticaLightC.eot?#iefix)format("embedded-opentype"),
-    url(/build/fonts/PragmaticaLightC/PragmaticaLightC.woff) format("woff"),
-    url(/build/fonts/PragmaticaLightC/PragmaticaLightC.ttf) format("truetype"),
-    url(/build/fonts/PragmaticaLightC/PragmaticaLightC.svg) format("svg");
+@font-face {
+    font-family: "OpenSansExtraBold";
+    src: url(/build/fonts/OpenSansExtraBold/OpenSansExtrabold.eot);
+    src: url(/build/fonts/OpenSansExtraBold/OpenSansExtrabold.eot?#iefix)format("embedded-opentype"),
+    url(/build/fonts/OpenSansExtraBold/OpenSansExtrabold.woff) format("woff"),
+    url(/build/fonts/OpenSansExtraBold/OpenSansExtrabold.ttf) format("truetype"),
+    url(/build/fonts/OpenSansExtraBold/OpenSansExtrabold.svg) format("svg");
     font-style: normal;
     font-weight: normal;
-}*/
+}
+
+@font-face {
+    font-family: "OpenSansSemiBold";
+    src: url(/build/fonts/OpenSansSemiBold/OpenSansSemibold.eot);
+    src: url(/build/fonts/OpenSansSemiBold/OpenSansSemibold.eot?#iefix)format("embedded-opentype"),
+    url(/build/fonts/OpenSansSemiBold/OpenSansSemibold.woff) format("woff"),
+    url(/build/fonts/OpenSansSemiBold/OpenSansSemibold.ttf) format("truetype"),
+    url(/build/fonts/OpenSansSemiBold/OpenSansSemibold.svg) format("svg");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "PragmaticaLightC";
+    src: url(/build/fonts/PragmaticaLightCRegular/PragmaticaLightCRegular.eot);
+    src: url(/build/fonts/PragmaticaLightCRegular/PragmaticaLightCRegular.eot?#iefix)format("embedded-opentype"),
+    url(/build/fonts/PragmaticaLightCRegular/PragmaticaLightCRegular.woff) format("woff"),
+    url(/build/fonts/PragmaticaLightCRegular/PragmaticaLightCRegular.ttf) format("truetype"),
+    url(/build/fonts/PragmaticaLightCRegular/PragmaticaLightCRegular.svg) format("svg");
+    font-style: normal;
+    font-weight: normal;
+}
 
 @font-face {
     font-family: "PragmaticaLightCBold";
