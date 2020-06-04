@@ -37,9 +37,12 @@
         max-width: 100%;
         position: relative;
         overflow: hidden;
+        border-radius: 10px;
+        margin: 0 3.63vw;
+        z-index: 2;
 
         &.bg-dark {
-            background-color: #000;
+            //background-color: #000;
         }
 
         &-assets {
@@ -78,7 +81,7 @@
     @media only screen and (max-width: 580px) {
         .banner {
             height: calc(100vh - 105px);
-            margin: -35px auto 0;
+/*            margin: -35px auto 0;*/
 
             &-assets {
 

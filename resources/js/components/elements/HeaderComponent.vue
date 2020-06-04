@@ -50,8 +50,6 @@
         z-index: 1;
         width: 100%;
         position: relative;
-        margin-bottom: 26px;
-
 
         &.absolute {
          //   position: absolute;
