@@ -19,7 +19,7 @@
                                      :button_text="'Записаться на сервис'"
                                      :form_title="''"
                                      :is_comment='true'
-                                     :form_h1="'<span class=\'c_orange\'>Запишись</span> на сервис'"
+                                     :form_h1="'Запишись на сервис'"
                                      :form_class="'mobile_white_bg'"
                                      :form_type='2'
             ></form-component>
