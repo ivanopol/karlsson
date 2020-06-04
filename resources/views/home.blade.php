@@ -6,11 +6,11 @@
     <header-component :absolute="true"  :theme="'light'" :city="'{{$city}}'" ></header-component>
     <banner-component :cities='@json($cities)'></banner-component>
 
-    <div class="container_bg_dark">
-        <div class="container">
-            <advantages-component></advantages-component>
-        </div>
+
+    <div class="container">
+        <advantages-component></advantages-component>
     </div>
+
     <div class="container_bg_dark">
         <div class="container">
             <!-- :form_h1="'<span class=\'c_orange\'>Заполните</span> форму'" -->

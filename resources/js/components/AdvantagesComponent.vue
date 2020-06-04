@@ -10,12 +10,6 @@
             </li>
             <li>
                 <div class="advantage">
-                    <span class="icon"><img src="/build/images/icons/service/experience.svg" alt="Брайт Парк сервис: Стаж мастеров от 10 лет"></span>
-                    <span class="text">Стаж мастеров от&nbsp;10&nbsp;лет</span>
-                </div>
-            </li>
-            <li>
-                <div class="advantage">
                     <span class="icon"><img src="/build/images/icons/service/garanty.svg" alt="Брайт Парк сервис: Гарантия на услуги 1 год"></span>
                     <span class="text">Гарантия на&nbsp;услуги 1&nbsp;год</span>
                 </div>
@@ -26,6 +20,13 @@
                     <span class="text">Отчёт&nbsp;о&nbsp;состоянии авто при выдаче</span>
                 </div>
             </li>
+            <li>
+                <div class="advantage">
+                    <span class="icon"><img src="/build/images/icons/service/experience.svg" alt="Брайт Парк сервис: Стаж мастеров от 10 лет"></span>
+                    <span class="text">Стаж мастеров от&nbsp;7&nbsp;лет</span>
+                </div>
+            </li>
+
         </ul>
     </section>
 </template>

@@ -1081,11 +1081,6 @@ footer {
                     }
                 }
             }
-
-            &:nth-child(1),
-            &:nth-child(2) {
-                border-bottom: 4px solid #ff8351;
-            }
         }
     }
 
@@ -1119,7 +1114,6 @@ footer {
     &.retargeting_wrap {
         ul {
             li {
-                border-bottom: 3px solid #ff8351;
                 .advantage {
                     .icon {
                     }
@@ -1161,7 +1155,6 @@ footer {
             margin-bottom: 100px;
             li {
                 width: 20%;
-                border-bottom: 4px solid #ff8351;
                 text-align: center;
                 margin: 0;
             }
