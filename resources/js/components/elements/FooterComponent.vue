@@ -1,6 +1,6 @@
 <template>
-    <footer class="block" v-bind:class="[ footer_class ]">
-        <div class="footer">
+    <footer v-bind:class="[ footer_class ]">
+        <div class="footer block">
             <div class="center">
                 <h2>Карлссон всегда на связи</h2>
                 <p>У&nbsp;вас есть вопросы? Пообщайтесь со&nbsp;специалистом по&nbsp;телефону<br><span class="brand-color block callibri_tel">{{phone_formatted}}</span><br>

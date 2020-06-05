@@ -89,7 +89,7 @@
             padding: 0 30px;
             li {
                 width: 31%;
-                height: 120px;
+                height: 20vw;
                 display: flex;
                 align-items: center;
                 justify-content: center;
