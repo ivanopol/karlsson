@@ -171,15 +171,19 @@ $color-coral: #ff8250;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 23px 22px 21px;
+   // padding: 23px 22px 21px;
     background: rgb(166,46,32);
     background: linear-gradient(90deg, rgba(166,46,32,1) 0%, rgba(225,34,41,1) 100%);
     border-radius: 6px;
-    display: inline-block;
+   // display: inline-block;
     font-weight: bold;
     font-size: 4vw;
     line-height: 1;
     cursor:pointer;
+    height: 14.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn-form {
@@ -374,7 +378,7 @@ form {
         margin: 0 auto;
         display: block;
         outline: none;
-        width: 80%;
+        width: 90%;
         -webkit-transition: all ease-out 0.1s;
         -moz-transition: all ease-out 0.1s;
         -o-transition: all ease-out 0.1s;
@@ -385,7 +389,7 @@ form {
     textarea,
     input,
     button {
-        max-width: 340px;
+        //max-width: 340px;
     }
 
     textarea {
@@ -401,15 +405,18 @@ form {
         margin-bottom: 15px;
         padding: 10px 12px;
         box-shadow: none;
-        font-size: 15px;
+        font-size: 5.4vw;
+        height: 14.5vw;
+        transition: all .3s ease-out;
 
         &:active, {
             border-color: #21992f;
+            box-shadow: 0 0 10px 0 #21992f;
         }
 
         &:focus {
             border-color: #21992f;
-            box-shadow: none;
+            box-shadow: 0 0 10px 0 #21992f;
         }
 
 
@@ -428,7 +435,7 @@ form {
         text-transform: uppercase;
         border: none;
         border-radius: 6px;
-        padding: 23px 22px 21px;
+    //    padding: 23px 22px 21px;
         text-align: center;
         text-decoration: none;
         letter-spacing: 0.3px;
@@ -436,6 +443,7 @@ form {
         font-size: 4vw;
         line-height: 1;
         cursor: pointer;
+        height: 14.5vw;
 
         &:active,
         &:hover {
@@ -979,8 +987,8 @@ footer {
 .btn-position {
     text-align: center;
     margin: 15px auto 0;
-    max-width: 340px;
-    display: block;
+   // max-width: 340px;
+   // display: block;
 }
 
 
