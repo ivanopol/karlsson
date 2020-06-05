@@ -171,7 +171,7 @@
 
         &-container {
             width: 90%;
-            margin: 3.63vw;
+            margin: 3.63vw auto;
         }
     }
 
