@@ -22,10 +22,10 @@
 
 <style lang="scss" scoped>
     .cls-1 {
-        fill:#FF8351;
+        fill:#e42127;
     }
     .check_green {
-        background-color: #61ad1e;
+        background-color: #e42127;
         width: 22px;
         height: 22px;
         border-radius: 30px;

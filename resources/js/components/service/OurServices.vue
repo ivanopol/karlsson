@@ -1,32 +1,34 @@
 <template>
-    <section class="car-services container">
-        <h2><span class="c_orange">Наши</span> услуги</h2>
-        <div class="container">
-            <badger-accordion ref="myAccordion">
-                <badger-accordion-item v-for="(service, index) in services" v-bind:key="service.id">
-                    <template slot="header">{{service.title}}</template>
-                    <template slot="content">
-                        <ul>
-                            <li v-for="list in service.list"><check-icon></check-icon> <span v-html="getPrice(list.title, list.price)"></span></li>
-                        </ul>
-                        <div class="service__contacts-wrap">
-                            <a :id="form_id + '_get_modal_' + index" class="btn btn-primary btn-position" v-on:click.prevent="show(service.title, form_id + '_' + index)">Записаться</a>
-                            <a :id="form_id + '_call_' + index " :href="'tel:' + cities.active.phone" class="btn btn-primary callibri_phone btn-position green">Позвонить</a>
-                        </div>
-                    </template>
-                </badger-accordion-item>
-            </badger-accordion>
+    <section class="container container_bg_dark">
+        <div class="car-services">
+            <h2>Услуги</h2>
+            <div class="container">
+                <badger-accordion ref="myAccordion">
+                    <badger-accordion-item v-for="(service, index) in services" v-bind:key="service.id">
+                        <template slot="header">{{service.title}}</template>
+                        <template slot="content">
+                            <ul>
+                                <li v-for="list in service.list"><check-icon></check-icon> <span v-html="getPrice(list.title, list.price)"></span></li>
+                            </ul>
+                            <div class="service__contacts-wrap">
+                                <a :id="form_id + '_get_modal_' + index" class="btn btn-primary btn-position" v-on:click.prevent="show(service.title, form_id + '_' + index)">Записаться на сервис</a>
+                                <a :id="form_id + '_call_' + index " :href="'tel:' + cities.active.phone" class="btn btn-primary callibri_phone btn-position green">Позвонить</a>
+                            </div>
+                        </template>
+                    </badger-accordion-item>
+                </badger-accordion>
+            </div>
+            <modal name="form-callback3" height="auto" :adaptive="true">
+                <div class="close" @click="hide"></div>
+                <form-buy2-component :cities="cities"
+                                     :form_title="form_title"
+                                     :form_id="form_id"
+                                     :button_text="button_text"
+                                     :is_comment="is_comment"
+                                     :form_type="'2'"
+                ></form-buy2-component>
+            </modal>
         </div>
-        <modal name="form-callback3" height="auto" :adaptive="true">
-            <div class="close" @click="hide"></div>
-            <form-buy2-component :cities="cities"
-                                 :form_title="form_title"
-                                 :form_id="form_id"
-                                 :button_text="button_text"
-                                 :is_comment="is_comment"
-                                 :form_type="'2'"
-            ></form-buy2-component>
-        </modal>
     </section>
 </template>
 
@@ -329,10 +331,20 @@
     }
 
     .car-services {
+        border-radius: 10px;
+        padding: 9vw 0;
+        margin: 3.63vw;
+        background-color: #fff;
+        z-index: 2;
+
         h2 {
-            text-align: center;
-            margin: 60px auto;
-            padding: 0 20px;
+            font-family: OpenSansExtraBold, Helvetica, sans-serif;
+            color: #000;
+            font-size: 6.8vw; // 28px;
+            line-height: 1.2;
+            text-align: left;
+            padding: 0 7.25vw 7.25vw;
+
             span {
                 display: inline-block;
             }
@@ -351,7 +363,7 @@
         width: 25px;
         height: 25px;
         position: relative;
-        color: #fff;
+        color: #e42127;
 
         &:before {
             content: '';
@@ -359,7 +371,7 @@
             position: absolute;
             right: 0;
             top: 0;
-            background-color: #FF8351;
+            background-color: #fff;
             width: 25px;
             height: 25px;
             border-radius: 20px;
@@ -368,7 +380,7 @@
         &:after {
             content: "";
             display: block;
-            border: 2px solid #ffffff;
+            border: 2px solid #e42127;
             border-left: none;
             border-top: none;
             width: 8px;
