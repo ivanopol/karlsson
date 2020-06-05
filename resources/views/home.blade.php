@@ -48,8 +48,8 @@
                       :phone='@json($cities['active']['phone'])'
                       :phone_formatted='@json($cities['active']['phone_format'])'
                       :footer_class="'container_bg_dark'"
-                      :ym_button='true'
-                      :ym_btn_class="'green btn-position'"
+                      :ym_button='false'
+                      :ym_btn_class="'btn-position'"
                       :cities='@json($cities)'>
     </footer-component>
     {!! html_entity_decode($cities['active']['begin_script']) !!}

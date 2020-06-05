@@ -136,7 +136,6 @@
 
 <style lang="scss">
     .route-button-wrap {
-        padding: 0 30px 50px;
         text-align: center
     }
 

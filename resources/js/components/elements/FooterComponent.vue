@@ -1,15 +1,20 @@
 <template>
-    <footer class="block footer" v-bind:class="[ footer_class ]">
-        <div class="block-text center mb">
-            <h2><span class="c_orange">Брайт Парк </span> всегда на связи</h2>
-            <p>Наш менеджер с&nbsp;удовольствием ответит на&nbsp;ваши вопросы по&nbsp;телефону&nbsp;<span v-if="!mobile" class="block callibri_tel">{{phone_formatted}}</span><br>
-            <div class="footer-callback-wrap" v-show="!mobile">
-                <a href="#" id="footer_request_callback" class="btn btn btn-primary btn-position green event" v-on:click.prevent="show('Заказать звонок', 'footer__modal_callback', 'Отправить', 1, 'callback')" >Заказать звонок</a>
+    <footer class="block" v-bind:class="[ footer_class ]">
+        <div class="footer">
+            <div class="center">
+                <h2>Карлссон всегда на связи</h2>
+                <p>У&nbsp;вас есть вопросы? Пообщайтесь со&nbsp;специалистом по&nbsp;телефону<br><span class="brand-color block callibri_tel">{{phone_formatted}}</span><br>
+                <div class="footer-callback-wrap" v-show="!mobile">
+                    <a href="#" id="footer_request_callback" class="btn btn btn-primary btn-position green event" v-on:click.prevent="show('Заказать звонок', 'footer__modal_callback', 'Отправить', 1, 'callback')" >Заказать звонок</a>
+                </div>
+    <!--            <div class="footer-call-wrap" v-show="mobile">
+                    <a :href="'tel:' + phone" id="main__footer_call" :data-goal="goal_call" @click="sendGoals(goal_call)" class="btn btn btn-primary btn-position green callibri_button" v-if="mobile">Позвонить</a>
+                </div>-->
+                <p>Брайт парк ближе, чем кажется<br>Проложите маршрут до ближайшего салона</p>
+                <div class="route-button-wrap">
+                    <a id="create_route" :class="'btn event ' + ym_btn_class" >Проложить маршрут</a>
+                </div>
             </div>
-            <div class="footer-call-wrap" v-show="mobile">
-                <a :href="'tel:' + phone" id="main__footer_call" :data-goal="goal_call" @click="sendGoals(goal_call)" class="btn btn btn-primary btn-position green callibri_button" v-if="mobile">Позвонить</a>
-            </div>
-            <p>Брайт парк ближе, чем кажется<br></p>
         </div>
         <yandex-map-component :coordinates='coordinates'
                               :button="ym_button"
@@ -134,20 +139,33 @@
         }
     }
 
-    footer {
+    .footer {
+        border-radius: 10px;
+        padding: 9vw 0;
+        margin: 3.63vw;
+        background-color: #fff;
+        z-index: 2;
+
         .footer-callback-wrap,
         .footer-call-wrap,
         .btn-place-wrap {
             margin-bottom: 40px;
         }
 
+
         h2 {
+            font-family: OpenSansExtraBold, Helvetica, sans-serif;
+            color: #000;
+            font-size: 6.8vw; // 28px;
+            line-height: 1.2;
+            text-align: left;
+            padding: 0 7.25vw 7.25vw;
+            margin-bottom: 0;
+
             span {
                 display: inline;
             }
         }
-
-        padding-bottom: 51px;
 
         .phone {
             border-bottom: 2px solid #b0c5dc;
@@ -157,7 +175,8 @@
         p {
             /*padding-top: 20px;*/
             font-family: PragmaticaLightCBold, Helvetica, sans-serif;
-            font-size: 18px;
+            font-size: 4.4vw;
+            padding: 0 7.25vw;
         }
 
         a {
