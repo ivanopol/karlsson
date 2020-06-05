@@ -76,13 +76,12 @@
 
 
         h2 {
-
             font-family: OpenSansExtraBold, Helvetica, sans-serif;
             color: #000;
             font-size: 6.8vw; // 28px;
             line-height: 1.2;
             text-align: left;
-            margin: 0 30px 20px;
+            padding: 0 7.25vw 7.25vw;  // 0 30px 30px
         }
 
         .t-block {

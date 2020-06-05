@@ -37,6 +37,14 @@ h1 {
     margin-bottom: 30px;
 }
 
+.container_bg_gray {
+    background-color: #999;
+}
+
+.container_bg_red {
+    background-color: #e22227;
+}
+
 @media only screen and (max-width: 580px) {
     .ad_h1 {
         font-size: 6.3vw;
@@ -389,11 +397,11 @@ form {
         font-size: 15px;
 
         &:active, {
-            border-color: #5fbd89;
+            border-color: #21992f;
         }
 
         &:focus {
-            border-color: #5fbd89;
+            border-color: #21992f;
             box-shadow: none;
         }
 
@@ -402,7 +410,6 @@ form {
 
     textarea {
         font-family: LadaPragmaticaRegular, Helvetica, sans-serif;
-        border-radius: 12px;
     }
 
     button {
@@ -434,7 +441,8 @@ form {
         }
 
         &:disabled {
-            background-color: #ccc !important;
+            background: #b5b5b5 !important;
+            color: #757575;
         }
     }
 }

@@ -186,7 +186,8 @@
         justify-content: center;
         align-content: center;
         color: rgba(255,255,255,0);
-        background-color: #FF8351!important;
+        background: rgb(166,46,32) !important;
+        background: linear-gradient(90deg, rgba(166,46,32,1) 0%, rgba(225,34,41,1) 100%) !important;
         &:after {
             content: "";
             background: url(/build/images/icons/animations/dots.svg) no-repeat center center;
@@ -197,7 +198,7 @@
             margin: 0 auto;
             left: 0;
             right: 0;
-            top: 14px;
+            top: 21px;
         }
     }
 
@@ -205,9 +206,8 @@
     .success {
         text-align: center;
         line-height: 1.2;
-        margin: 18px auto;
+        margin: 20px auto 0;
         border-radius: 8px;
-        padding: 15px;
         font-size: 16px;
         max-width: 340px;
 

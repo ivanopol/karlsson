@@ -109,8 +109,11 @@
             margin: 3.63vw;
 
             h2 {
-                color: #fff;
                 font-family: OpenSansExtraBold, Helvetica, sans-serif;
+                font-size: 6.8vw; // 28px;
+                line-height: 1.2;
+                text-align: left;
+                color: #fff;
                 padding: 0 7.25vw; // 0 30px
             }
 

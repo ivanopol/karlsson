@@ -1,44 +1,46 @@
 <template>
-    <section class="car-logos container">
-        <h2><span class="c_orange">Марки</span> автомобилей,<br> которые мы обслуживаем</h2>
-        <ul>
-            <li>
-                <img src="/build/images/car_logos/lada.png" alt="Lada">
-            </li>
-            <li>
-                <img src="/build/images/car_logos/skoda.png" alt="Skoda">
-            </li>
-            <li>
-                <img src="/build/images/car_logos/renault.png" alt="Renault">
-            </li>
-            <li>
-                <img src="/build/images/car_logos/volcwagen.png" alt="Volcwagen">
-            </li>
-            <li>
-                <img src="/build/images/car_logos/kia.png" alt="Kia">
-            </li>
-            <li>
-                <img src="/build/images/car_logos/nissan.png" alt="Nissan">
-            </li>
-            <li>
-                <img src="/build/images/car_logos/toyota.png" alt="Toyota">
-            </li>
-            <li>
-                <img src="/build/images/car_logos/mazda.png" alt="Mazda">
-            </li>
-            <li>
-                <img src="/build/images/car_logos/hyundai.png" alt="Hyundai">
-            </li>
-            <li>
-                <img src="/build/images/car_logos/mitsubishi.png" alt="Mitsubishi">
-            </li>
-            <li>
-                <img src="/build/images/car_logos/ford.png" alt="Ford">
-            </li>
-            <li>
-                <img src="/build/images/car_logos/uaz.png" alt="УАЗ">
-            </li>
-        </ul>
+    <section class="container container_bg_red">
+        <div class="car-logos">
+            <h2>Марки автомобилей, которые мы обслуживаем</h2>
+            <ul>
+                <li>
+                    <img src="/build/images/car_logos/lada.png" alt="Lada">
+                </li>
+                <li>
+                    <img src="/build/images/car_logos/skoda.png" alt="Skoda">
+                </li>
+                <li>
+                    <img src="/build/images/car_logos/renault.png" alt="Renault">
+                </li>
+                <li>
+                    <img src="/build/images/car_logos/volcwagen.png" alt="Volcwagen">
+                </li>
+                <li>
+                    <img src="/build/images/car_logos/kia.png" alt="Kia">
+                </li>
+                <li>
+                    <img src="/build/images/car_logos/nissan.png" alt="Nissan">
+                </li>
+                <li>
+                    <img src="/build/images/car_logos/toyota.png" alt="Toyota">
+                </li>
+                <li>
+                    <img src="/build/images/car_logos/mazda.png" alt="Mazda">
+                </li>
+                <li>
+                    <img src="/build/images/car_logos/hyundai.png" alt="Hyundai">
+                </li>
+                <li>
+                    <img src="/build/images/car_logos/mitsubishi.png" alt="Mitsubishi">
+                </li>
+                <li>
+                    <img src="/build/images/car_logos/ford.png" alt="Ford">
+                </li>
+                <li>
+                    <img src="/build/images/car_logos/uaz.png" alt="УАЗ">
+                </li>
+            </ul>
+        </div>
     </section>
 </template>
 
@@ -62,10 +64,19 @@
 
 <style scoped lang="scss">
     .car-logos {
+        border-radius: 10px;
+        padding: 9vw 0;
+        margin: 3.63vw;
+        background-color: #fff;
+        z-index: 2;
+
         h2 {
-            text-align: center;
-            margin: 60px auto;
-            padding: 0 20px;
+            font-family: OpenSansExtraBold, Helvetica, sans-serif;
+            color: #000;
+            font-size: 6.8vw; // 28px;
+            line-height: 1.2;
+            text-align: left;
+            padding: 0 7.25vw 7.25vw;
             span {
                 display: inline-block;
             }
