@@ -1,27 +1,29 @@
 <template>
-    <section class="service-review bg-dark">
-        <div class="service-review-layer container">
-            <div class="swiper-button-prev" slot="button-prev"></div>
-            <div class="swiper-button-next" slot="button-next"></div>
-            <swiper class="swiper container-2" ref="mySwiper" :options="swiperOptions">
-                <swiper-slide v-for="review in reviews" v-bind:key="review.id">
-                    <div class="swiper__wrap">
-                        <div class="swiper__head">
-                            <div class="swiper__head-block with-big-qoute">
-                                <div class="swiper__head-block-name">{{review.name}}</div>
-                                <div class="swiper__head-block-stars">
-                                    <ul>
-                                        <li v-for="n in 5" v-bind:class="{'rating-active': checkRating(n, review)}"></li>
-                                    </ul>
+    <section class="service-review container_bg_dark">
+        <div>
+            <div class="service-review-layer container">
+                <div class="swiper-button-prev" slot="button-prev"></div>
+                <div class="swiper-button-next" slot="button-next"></div>
+                <swiper class="swiper container-2" ref="mySwiper" :options="swiperOptions">
+                    <swiper-slide v-for="review in reviews" v-bind:key="review.id">
+                        <div class="swiper__wrap">
+                            <div class="swiper__head">
+                                <div class="swiper__head-block with-big-qoute">
+                                    <div class="swiper__head-block-name">{{review.name}}</div>
+                                    <div class="swiper__head-block-stars">
+                                        <ul>
+                                            <li v-for="n in 5" v-bind:class="{'rating-active': checkRating(n, review)}"></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="swiper__text">
+                                <span>{{review.text}}</span>
+                            </div>
                         </div>
-                        <div class="swiper__text">
-                            <span>{{review.text}}</span>
-                        </div>
-                    </div>
-                </swiper-slide>
-            </swiper>
+                    </swiper-slide>
+                </swiper>
+            </div>
         </div>
     </section>
 </template>
@@ -116,8 +118,8 @@
 <style scoped lang="scss">
     .swiper-button-prev,
     .swiper-button-next {
-        border-color: #FF8351;
-        color: #FF8351;
+        border-color: #e42127;
+        color: #e42127;
     }
 
     .service-review-layer {
@@ -169,7 +171,7 @@
 
         &-container {
             width: 90%;
-            margin: 60px auto;
+            margin: 3.63vw;
         }
     }
 
