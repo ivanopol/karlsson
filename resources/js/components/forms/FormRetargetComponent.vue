@@ -145,21 +145,16 @@
 
             .with-pre-title {
                 h2 {
-                    margin-bottom: 10px;
+                    margin-bottom: 0;
                 }
 
                 .pre-title {
+                    font-family: OpenSansSemiBold, Helvetica, sans-serif;
                     color: #b2b4b3;
                     padding: 0 7.25vw; // 0 30px
                     text-align: left;
-                    font-weight: bold;
                     font-size: 4.5vw;
                     margin-bottom: 0;
-
-                    &-highlight {
-                        font-size: 7.5vw;
-                        color: #e42127;
-                    }
                 }
             }
 
