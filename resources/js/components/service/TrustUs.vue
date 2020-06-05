@@ -1,16 +1,18 @@
 <template>
-    <section class="container trust-us">
-        <h2><span class="c_orange">Нам</span> доверяют</h2>
-        <div class="resp-double-columns">
-            <div class="resp-row" v-for="service in ratings" v-bind:key="service.id">
-                <div class="resp-left-column"><img :src="service.path" :alt="service.alt"></div>
-                <div class="resp-right-column">
-                    <span class="trust-us-rating-value">{{service.rating}}</span>
-                    <span class="trust-us-rating-stars">
-                        <ul>
-                             <li v-for="n in 5" v-bind:class="{'rating-active': checkRating(n, service)}"></li>
-                        </ul>
-                    </span>
+    <section class="container container_bg_dark">
+        <div class="trust-us">
+            <h2>Нам доверяют</h2>
+            <div class="resp-double-columns">
+                <div class="resp-row" v-for="service in ratings" v-bind:key="service.id">
+                    <div class="resp-left-column"><img :src="service.path" :alt="service.alt"></div>
+                    <div class="resp-right-column">
+                        <span class="trust-us-rating-value">{{service.rating}}</span>
+                        <span class="trust-us-rating-stars">
+                            <ul>
+                                 <li v-for="n in 5" v-bind:class="{'rating-active': checkRating(n, service)}"></li>
+                            </ul>
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -62,10 +64,19 @@
 
 <style scoped lang="scss">
     .trust-us {
-        margin-bottom: 40px;
+        border-radius: 10px;
+        padding: 9vw 0;
+        margin: 3.63vw;
+        background-color: #fff;
+        z-index: 2;
+
         h2 {
-            text-align: center;
-            margin: 60px auto;
+            font-family: OpenSansExtraBold, Helvetica, sans-serif;
+            color: #000;
+            font-size: 6.8vw; // 28px;
+            line-height: 1.2;
+            text-align: left;
+            padding: 0 7.25vw 7.25vw;
             span {
                 display: inline-block;
             }
