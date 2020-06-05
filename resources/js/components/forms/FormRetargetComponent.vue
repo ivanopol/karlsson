@@ -1,7 +1,7 @@
 <template>
     <section :class="'block form retargeting-form ' + form_class">
-        <div class="form-wrapper">
-            <h3 v-html="form_title" v-if="form_title"></h3>
+        <div class="form-wrapper with-pre-title">
+            <h2 v-html="form_title" v-if="form_title"></h2>
             <p class="pre-title" v-html="form_pre_title" v-if="form_pre_title"></p>
             <form-common :cities="cities"
                          :button_text="button_text"
@@ -72,7 +72,7 @@
     .retargeting-form {
         margin-bottom: 20px;
 
-        .form-wrapper {
+/*        .form-wrapper {
             padding: 0 0 8px;
 
             h3 {
@@ -87,7 +87,7 @@
                 font-size: 18px;
                 margin-bottom: 0;
             }
-        }
+        }*/
 
         @media only screen and (min-width: 580px) {
             .form-wrapper {
@@ -136,15 +136,40 @@
 
     @media only screen and (max-width: 580px) {
         .mobile_white_bg {
-            background: #fff;
-            padding: 40px 30px;
-            border-radius: 20px;
-            width: 90%;
-            max-width: 340px;
-            margin: 40px auto;
+            background: rgb(41,41,41);
+            background: linear-gradient(90deg, rgba(41,41,41,1) 0%, rgba(83,83,83,1) 100%);
+            padding: 9vw 0 7vw;
+            border-radius: 10px;
+            border: 6px solid #fff;
+            margin: 3.63vw;
+
+            .with-pre-title {
+                h2 {
+                    margin-bottom: 10px;
+                }
+
+                .pre-title {
+                    color: #b2b4b3;
+                    padding: 0 7.25vw; // 0 30px
+                    text-align: left;
+                    font-weight: bold;
+                    font-size: 4.5vw;
+                    margin-bottom: 0;
+
+                    &-highlight {
+                        font-size: 7.5vw;
+                        color: #e42127;
+                    }
+                }
+            }
 
             h2 {
-                color: #000;
+                font-family: OpenSansExtraBold, Helvetica, sans-serif;
+                font-size: 6.8vw; // 28px;
+                line-height: 1.2;
+                text-align: left;
+                color: #fff;
+                padding: 0 7.25vw; // 0 30px
             }
 
             .form-wrapper {
@@ -156,7 +181,7 @@
             }
 
             form > * {
-                width: 100%;
+                //   width: 100%;
             }
         }
     }
