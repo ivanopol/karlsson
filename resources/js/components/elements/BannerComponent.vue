@@ -1,5 +1,5 @@
 <template>
-    <section class="banner bg-dark">
+    <section class="banner">
         <div class="banner-assets">
             <picture>
                 <source srcset="/build/images/main/mobile/service.jpg, /build/images/main/mobile/service.jpg 2x" media="(max-width: 580px)">
@@ -104,10 +104,11 @@
     @media only screen and (min-width: 581px) and (max-width: 960px) {
         .banner {
             width: 100%;
-            margin: -45px auto 0;
+            border-radius: 0;
+            margin: 0 auto;
 
             &-content {
-                padding: 90px 50px;
+                padding: 50px 50px;
 
                 .banner-title-white {
                     font-size: 5.2vw;
@@ -120,7 +121,9 @@
     @media only screen and (min-width: 961px) {
         .banner {
             width: 100%;
-            margin: -75px auto 0;
+            max-width: 1200px;
+            border-radius: 0;
+            margin:0 auto;
 
             &-content {
                 padding: 50px 50px;
@@ -135,8 +138,7 @@
 
     @media only screen and (min-width: 1920px) {
         .banner {
-            max-width: 1980px;
-            margin: -75px auto 0 ;
+            margin: 0 auto ;
             &-content {
                 .banner-title-white {
                     font-size: 80px;

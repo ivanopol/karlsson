@@ -81,21 +81,30 @@
             font-size: 6.8vw; // 28px;
             line-height: 1.2;
             text-align: left;
-            padding: 0 7.25vw 7.25vw;  // 0 30px 30px
+            padding: 0 30px 80px;  // 0 30px 30px
         }
 
         .t-block {
             display: block;
         }
 
+        @media only screen and (min-width: 961px) {
+            &::before {
+                margin-top: -295px;
+            }
+        }
+
         @media only screen and (min-width: 580px) {
+            & {
+
+            }
+
             h2 {
-                font-family: LadaPragmaticaRegularBold, Helvetica, sans-serif;
                 font-size: 48px;
                 line-height: 1.3;
-                color: #000;
-                text-align: center;
-                margin-bottom: 60px;
+                color: #fff;
+                margin-bottom: 0;
+                padding: 0 50px 80px;
             }
         }
 
@@ -191,7 +200,9 @@
 
         @media only screen and (min-width: 580px) {
             & {
-                padding: 80px 30px;
+                padding: 80px 0;
+                background-color: transparent;
+                margin: 0;
             }
 
             h1 {

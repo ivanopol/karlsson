@@ -116,14 +116,11 @@
 
     @media only screen and (min-width: 580px) {
         header {
-            margin-bottom: 40px;
         }
     }
 
     @media only screen and (min-width: 1367px) {
         header {
-            margin-bottom: 70px;
-
             .logo-wrap {
                 .logo-karlsson {
                     height: 35px;
