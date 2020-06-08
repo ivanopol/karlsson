@@ -12,7 +12,7 @@
                 </div>-->
                 <p>Брайт парк ближе, чем кажется<br>Проложите маршрут до ближайшего салона</p>
                 <div class="route-button-wrap">
-                    <a id="create_route" :class="'btn event ' + ym_btn_class" >Проложить маршрут</a>
+                    <a id="create_route" :class="'btn event ' + ym_btn_class" v-on:click.prevent="getRoute()">Проложить маршрут</a>
                 </div>
             </div>
         </div>
@@ -79,6 +79,9 @@
             };
         },
         methods: {
+            getRoute: function () {
+                 this.$children[0].createRoute();
+            },
             show (title, form_id, button_text, form_type, goal) {
                 this.form_title = title;
                 this.form_id = form_id;
