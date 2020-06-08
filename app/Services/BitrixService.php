@@ -12,7 +12,7 @@ class BitrixService
 {
 
     // Сюда добавляются ID ответственных через запятую. Должен быть как минимум 1 ID
-    private $arr_responsible_id = [1447]; //Мурыга Милана
+    private $arr_responsible_id = [1374];//[1447]; //Мурыга Милана
 
     public function __construct()
     {
@@ -36,7 +36,7 @@ class BitrixService
         $data['form_type'] = isset($data['form_type']) ? intval($data['form_type']) : '';
 
         $phone = $data['phone'];
-        $responsible_id = $data['responsible_id'];
+        $responsible_id = 1374;//$data['responsible_id'];
 
         $request = [
             'type' => "PHONE",
@@ -49,12 +49,12 @@ class BitrixService
             throw new Exception();
         }
 
-        $emailFrom = 'site@brightpark.ru';
+        $emailFrom = 'site@karlsson.ru';
 
         $emailsTo = 'ivanopol777@mail.ru,';
         $emailsTo .= $city[0]->callback_emails;
 
-        $subject = 'Брайт Парк. Заявка с сайта ';
+        $subject = 'Карлссон. Заявка с сайта ';
 
         $params['name'] = isset($data['name']) ? $data['name'] : '';
         $params['phone'] = isset($data['phone']) ? $data['phone'] : '';
