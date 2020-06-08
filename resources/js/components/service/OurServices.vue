@@ -49,6 +49,7 @@
                     maintenance: {
                         id: 1,
                         title: 'Техническое обслуживание',
+                        active: true,
                         list: {
                             0: {
                                 title: 'Замена масла (масло, фильтр, работа)',
@@ -79,6 +80,7 @@
                     locksmith_repair: {
                         id: 2,
                         title: 'Слесарный ремонт',
+                        active: true,
                         list: {
                             0: {
                                 title: 'Диагностика',
@@ -157,6 +159,7 @@
                     body_repair: {
                         id: 3,
                         title: 'Кузовной ремонт',
+                        active: true,
                         list: {
                             0: {
                                 title: 'Окраска бампера',
@@ -251,6 +254,7 @@
                     car_care: {
                         id: 4,
                         title: 'Уход за автомобилем',
+                        active: true,
                         list: {
                             0: {
                                 title: 'Предпродажная подготовка авто с пробегом',
@@ -285,8 +289,15 @@
                 },
             }
         },
-        computed: {
-        },
+/*        computed: {
+            activeServices: function () {
+                return this.services.filter(function(s) {
+
+                    console.log(s[0]);
+                    return true;
+                });
+            }
+        },*/
         methods: {
             getPrice: function(title, price) {
                 let str = '';
@@ -312,7 +323,25 @@
             },
         },
         created () {
-            this.modalWidth = window.innerWidth -20
+            this.modalWidth = window.innerWidth -20;
+
+            switch (this.cities.active.value) {
+                case 'perm':
+                case 'ekaterinburg':
+                case 'volgograd':
+                case 'magnitogorsk':
+                    break;
+                case 'moscow':
+                    this.display.car_care = false;
+                    break;
+                case 'rostov-on-don':
+                    this.display.body_repair = false;
+                    this.display.car_care = false;
+                    break;
+            }
+        },
+        beforeCreate() {
+
         },
         components: {
             BadgerAccordion,
@@ -321,7 +350,7 @@
         },
         mounted() {
             this.$refs.myAccordion.open(0);
-        }
+        },
     }
 </script>
 
