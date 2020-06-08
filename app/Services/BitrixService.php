@@ -52,11 +52,7 @@ class BitrixService
         $emailFrom = 'site@brightpark.ru';
 
         $emailsTo = 'ivanopol777@mail.ru,';
-        if ($data['form_type'] === 1) {
-            $emailsTo .= $city[0]->callback_emails;
-        } elseif ($data['form_type'] === 2) {
-            $emailsTo .= $city[0]->callback_service_emails;
-        }
+        $emailsTo .= $city[0]->callback_emails;
 
         $subject = 'Брайт Парк. Заявка с сайта ';
 

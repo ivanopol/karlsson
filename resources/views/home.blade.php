@@ -21,7 +21,6 @@
                                      :is_comment='true'
                                      :form_h1="'Запишись на сервис сейчас'"
                                      :form_class="'mobile_white_bg'"
-                                     :form_type='2'
             ></form-component>
         </div>
     </div>
@@ -39,7 +38,6 @@
                                      :form_pre_title="'и получи скидку <span class=\'pre-title-highlight\'>5%</span>'"
                                      :is_comment='true'
                                      :form_class="'mobile_white_bg'"
-                                     :form_type='2'
             ></form-retarget-component>
         </div>
     </div>
