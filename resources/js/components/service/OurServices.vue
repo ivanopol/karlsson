@@ -4,7 +4,7 @@
             <h2>Услуги</h2>
             <div class="container">
                 <badger-accordion ref="myAccordion">
-                    <badger-accordion-item v-for="(service, index) in services" v-bind:key="service.id">
+                    <badger-accordion-item v-for="(service, index) in activeServices" v-bind:key="service.id">
                         <template slot="header">{{service.title}}</template>
                         <template slot="content">
                             <ul>
@@ -45,10 +45,11 @@
                 form_id: 'services__service_modal',
                 button_text: 'Записаться',
                 is_comment: true,
-                services: {
-                    maintenance: {
+                services: [
+                    {
                         id: 1,
                         title: 'Техническое обслуживание',
+                        alias: 'maintenance',
                         active: true,
                         list: {
                             0: {
@@ -77,9 +78,10 @@
                             },
                         }
                     },
-                    locksmith_repair: {
+                    {
                         id: 2,
                         title: 'Слесарный ремонт',
+                        alias: 'locksmith_repair',
                         active: true,
                         list: {
                             0: {
@@ -156,9 +158,10 @@
                             },
                         }
                     },
-                    body_repair: {
+                    {
                         id: 3,
                         title: 'Кузовной ремонт',
+                        alias: 'body_repair',
                         active: true,
                         list: {
                             0: {
@@ -251,9 +254,10 @@
                             },
                         }
                     },
-                    car_care: {
+                    {
                         id: 4,
                         title: 'Уход за автомобилем',
+                        alias: 'car_care',
                         active: true,
                         list: {
                             0: {
@@ -286,18 +290,35 @@
                             },
                         },
                     }
-                },
+                ],
             }
         },
-/*        computed: {
+        computed: {
             activeServices: function () {
-                return this.services.filter(function(s) {
+                return this.services.filter((service) => {
 
-                    console.log(s[0]);
-                    return true;
+                    switch (this.cities.active.value) {
+                        case 'perm':
+                        case 'ekaterinburg':
+                        case 'volgograd':
+                        case 'magnitogorsk':
+                            break;
+                        case 'moscow':
+                            if (service.alias === 'car_care') {
+                                service.active = false;
+                            }
+                            break;
+                        case 'rostov-na-donu':
+                            if (service.alias === 'car_care' || service.alias === 'body_repair' ) {
+                                service.active = false;
+                            }
+                            break;
+                    }
+
+                    return service.active;
                 });
             }
-        },*/
+        },
         methods: {
             getPrice: function(title, price) {
                 let str = '';
@@ -324,21 +345,6 @@
         },
         created () {
             this.modalWidth = window.innerWidth -20;
-
-            switch (this.cities.active.value) {
-                case 'perm':
-                case 'ekaterinburg':
-                case 'volgograd':
-                case 'magnitogorsk':
-                    break;
-                case 'moscow':
-                    this.display.car_care = false;
-                    break;
-                case 'rostov-on-don':
-                    this.display.body_repair = false;
-                    this.display.car_care = false;
-                    break;
-            }
         },
         beforeCreate() {
 
