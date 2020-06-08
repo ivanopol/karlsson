@@ -88,26 +88,6 @@
             display: block;
         }
 
-        @media only screen and (min-width: 961px) {
-            &::before {
-                margin-top: -295px;
-            }
-        }
-
-        @media only screen and (min-width: 580px) {
-            & {
-
-            }
-
-            h2 {
-                font-size: 48px;
-                line-height: 1.3;
-                color: #fff;
-                margin-bottom: 0;
-                padding: 0 50px 80px;
-            }
-        }
-
         .retarget-trigger {
             padding-top: 60px;
         }
@@ -169,6 +149,13 @@
             }
         }
 
+        @media only screen and (min-width: 961px) {
+            &::before {
+                margin-top: -295px;
+            }
+        }
+
+
         &.service_wrap,
         &.retargeting_wrap {
             ul {
@@ -210,13 +197,33 @@
                 margin-bottom: 90px;
             }
 
+            h2 {
+                font-size: 48px;
+                line-height: 1.3;
+                color: #fff;
+                margin-bottom: 0;
+                padding: 0 50px 80px;
+            }
+
             ul {
+                justify-content: center;
+                background-color: #FFF;
+                border-radius: 15px;
                 flex-wrap: nowrap;
-                margin-bottom: 100px;
+                margin-bottom: 80px;
+                overflow: hidden;
                 li {
-                    width: 20%;
+                    width: 25%;
                     text-align: center;
                     margin: 0;
+
+                    &:nth-child(even) {
+                        background-color: #FAFAFA;
+                    }
+
+                    &:nth-child(odd) {
+                        background-color: #FFF;
+                    }
                 }
             }
         }
@@ -243,11 +250,9 @@
             }
         }
 
-        @media only screen and (min-width: 580px) and (max-width: 700px) {
+        @media only screen and (min-width: 580px) and (max-width: 1000px) {
             ul {
-                li {
-                    width: 23.3%;
-                }
+                margin: 0 15px;
             }
         }
 
