@@ -25,6 +25,7 @@
                                      :form_id="form_id"
                                      :button_text="button_text"
                                      :is_comment="is_comment"
+                                     :form_class="'mobile_white_bg'"
                                      :form_type="'2'"
                 ></form-buy2-component>
             </modal>
@@ -326,6 +327,8 @@
 </script>
 
 <style lang="scss">
+    @import "./resources/sass/modal.scss";
+
     .service__contacts-wrap {
         margin-top: 30px;
     }

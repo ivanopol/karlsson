@@ -72,23 +72,6 @@
     .retargeting-form {
         margin-bottom: 20px;
 
-/*        .form-wrapper {
-            padding: 0 0 8px;
-
-            h3 {
-                margin-bottom: 0;
-            }
-
-            .pre-title {
-                color: #000;
-                padding: 0 10px;
-                text-align: center;
-                font-weight: bold;
-                font-size: 18px;
-                margin-bottom: 0;
-            }
-        }*/
-
         @media only screen and (min-width: 580px) {
             .form-wrapper {
                 padding: 80px 0 28px;
