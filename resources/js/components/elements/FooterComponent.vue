@@ -3,7 +3,7 @@
         <div class="footer block">
             <div class="center">
                 <h2>Карлссон всегда на связи</h2>
-                <p>У&nbsp;вас есть вопросы? Пообщайтесь со&nbsp;специалистом по&nbsp;телефону<br><span class="brand-color block callibri_tel">{{phone_formatted}}</span><br>
+                <p>У&nbsp;вас есть вопросы? Пообщайтесь со&nbsp;специалистом по&nbsp;телефону<br><a :href="'tel:' + phone" class="thin-link brand-color block callibri_tel">{{phone_formatted}}</a><br>
                 <div class="footer-callback-wrap" v-show="!mobile">
                     <a href="#" id="footer_request_callback" class="btn btn btn-primary btn-position green event" v-on:click.prevent="show('Заказать звонок', 'footer__modal_callback', 'Отправить', 1, 'callback')" >Заказать звонок</a>
                 </div>
@@ -137,6 +137,10 @@
         .block {
            // display: unset;
         }
+    }
+
+    .thin-link {
+        font-weight: normal;
     }
 
     .footer {
