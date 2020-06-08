@@ -194,33 +194,32 @@
             text-align: center;
         }
 
-        #warning,
-        #success {
+        .warning,
+        .success {
             text-align: center;
             line-height: 1.2;
             margin: 18px auto;
             border-radius: 8px;
-            padding: 15px;
             font-size: 16px;
             max-width: 340px;
+            padding: 19px;
 
         }
 
-        #warning {
+        .warning {
             p {
-                color: #ff7777;
+                color: #e12229;
             }
         }
 
-        #success {
-            background-color: #dafbcc;
+        .success {
+            background-color: #dafbccd1;
 
             p {
                 margin: 0 !important;
-                color: #30c130;
+                color: #209632;
             }
         }
-
         &.form {
             button {
                 margin-top: 30px;

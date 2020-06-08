@@ -210,25 +210,29 @@
     .success {
         text-align: center;
         line-height: 1.2;
-        margin: 20px auto 0;
+        margin: 18px auto 0;
         border-radius: 8px;
         font-size: 16px;
         max-width: 340px;
+        padding: 19px;
 
     }
 
     .warning {
+        background-color: #ffccceba;
+
         p {
-            color: #ff7777;
+            margin: 0 !important;
+            color: #e12229;
         }
     }
 
     .success {
-        background-color: #dafbcc;
+        background-color: #dafbccd1;
 
         p {
             margin: 0 !important;
-            color: #30c130;
+            color: #209632;
         }
     }
 
