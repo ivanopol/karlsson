@@ -51,14 +51,13 @@ class HomeController extends Controller
         $data['coordinates'] = explode(",", $city['coordinates']);
         $this->seo->setMetaTags($city, ['place' => $data['coordinates']]);
 
-        $models = CarModel::with('types_preview')->get();
         $data['coordinates'] = explode(",", $city['coordinates']);
 
         return view('home', [
             'data' => $data,
             'city' => $this->city,
             'cities' => $cities,
-            'models'=>$models,
+
         ]);
     }
 

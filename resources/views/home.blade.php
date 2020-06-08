@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <tab-bar :theme="'dark'" :cities='@json($cities)' :models='@json($models)' :phone="'{{$cities['active']['phone']}}'"></tab-bar>
+    <tab-bar :theme="'dark'" :cities='@json($cities)'  :phone="'{{$cities['active']['phone']}}'"></tab-bar>
     <header-sticky-component :theme="'light'" :city="'{{$city}}'"></header-sticky-component>
     <header-component :absolute="true"  :theme="'light'" :city="'{{$city}}'" ></header-component>
     <banner-component :cities='@json($cities)'></banner-component>
