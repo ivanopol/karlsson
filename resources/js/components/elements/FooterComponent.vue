@@ -143,7 +143,12 @@
         font-weight: normal;
     }
 
+    footer {
+        display: grid;
+    }
+
     .footer {
+
         border-radius: 10px;
         padding: 9vw 0;
         margin: 3.63vw;
