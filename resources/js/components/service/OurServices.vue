@@ -299,7 +299,7 @@
 
                     switch (this.cities.active.value) {
                         case 'perm':
-                        case 'ekaterinburg':
+                        case 'yekaterinburg':
                         case 'volgograd':
                         case 'magnitogorsk':
                             break;
