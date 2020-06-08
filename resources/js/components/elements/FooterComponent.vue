@@ -7,10 +7,7 @@
                 <div class="footer-callback-wrap" v-show="!mobile">
                     <a href="#" id="footer_request_callback" class="btn btn btn-primary btn-position green event" v-on:click.prevent="show('Заказать звонок', 'footer__modal_callback', 'Отправить', 1, 'callback')" >Заказать звонок</a>
                 </div>
-    <!--            <div class="footer-call-wrap" v-show="mobile">
-                    <a :href="'tel:' + phone" id="main__footer_call" :data-goal="goal_call" @click="sendGoals(goal_call)" class="btn btn btn-primary btn-position green callibri_button" v-if="mobile">Позвонить</a>
-                </div>-->
-                <p>Брайт парк ближе, чем кажется<br>Проложите маршрут до ближайшего салона</p>
+                <p>Карлссон ближе, чем кажется<br>Проложите маршрут до ближайшего салона</p>
                 <div class="route-button-wrap">
                     <a id="create_route" :class="'btn event ' + ym_btn_class" v-on:click.prevent="getRoute()">Проложить маршрут</a>
                 </div>
@@ -154,7 +151,7 @@
 
         border-radius: 10px;
         padding: 9vw 0;
-        margin: 3.63vw;
+        margin: 3.63vw 3.63vw 7.26vw;
         background-color: #fff;
         z-index: 2;
 
