@@ -288,11 +288,16 @@ $color-coral: #ff8250;
 
 .container {
     overflow: hidden;
+}
+
+.container,
+.container-no-overflow {
     max-width: 960px;
     margin: 0 auto;
 }
 
 @media only screen and (min-width: 1367px) {
+    .container-no-overflow,
     .container {
         max-width: 1200px;
     }
@@ -1033,7 +1038,7 @@ footer {
     .bg-dark-offset:before {
         content: '';
         display: block;
-        z-index: -1;
+        z-index: -2;
         background: rgb(0,0,0);
         background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(69,69,69,1) 100%);
         max-width: 100%;

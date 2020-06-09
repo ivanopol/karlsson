@@ -6,8 +6,8 @@
     <header-component :absolute="true"  :theme="'light'" :city="'{{$city}}'" ></header-component>
     <banner-component :cities='@json($cities)'></banner-component>
 
-    <div class="container">
-        <advantages-component></advantages-component>
+    <div class="container-no-overflow ">
+         <advantages-component></advantages-component>
     </div>
 
     <div class="container_bg_dark bg-dark-offset">

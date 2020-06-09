@@ -1,5 +1,5 @@
 <template>
-    <section id="advantages" class="advantages_wrap service_wrap">
+    <section id="advantages" class="advantages_wrap service_wrap with-gear">
         <h2>Наши <span class="t-block">преимущества</span></h2>
         <ul>
             <li>
@@ -28,6 +28,7 @@
             </li>
 
         </ul>
+
     </section>
 </template>
 
@@ -44,6 +45,24 @@
 
 <style scoped lang="scss">
 
+    @media only screen and (min-width: 1025px) {
+        .with-gear {
+        //    position: relative;
+        }
+
+        .with-gear:after {
+            content: "";
+            width: 180px;
+            height: 180px;
+            background: url(/build/images/gear.png) no-repeat;
+            background-size: contain;
+            position: absolute;
+            z-index: -1;
+            margin-top: -80px;
+            margin-left: -20px;
+        }
+    }
+
     .advantages_wrap {
         border-radius: 10px;
         padding: 9vw 0 7vw; // 40px 0 30px;
@@ -54,7 +73,7 @@
         &::before {
             content: "";
             display: block;
-            z-index: -1;
+            z-index: -3;
             background-color: #e22227;
             max-width: 100%;
             width: 100vw;
@@ -88,7 +107,7 @@
             display: block;
         }
 
-        @media only screen and (min-width: 580px) {
+         @media only screen and (min-width: 580px) {
             &::before {
                 max-height: 800px;
             }
@@ -122,6 +141,7 @@
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
+            position: relative;
 
             li {
                 width: 50%;
