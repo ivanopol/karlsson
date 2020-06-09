@@ -90,7 +90,8 @@
         }
 
         form {
-           // margin-bottom: 40px;
+            margin-top: 20px;
+            margin-bottom: 0;
         }
 
         .block-text {

@@ -182,7 +182,7 @@
             }
 
             &-container {
-                margin: 150px auto;
+                margin: 10px auto 0;
             }
         }
     }

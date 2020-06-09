@@ -29,7 +29,7 @@
     <trust-us></trust-us>
     <review-service></review-service>
 
-    <div class="container_bg_dark">
+    <div class="container_bg_dark bg-dark-offset bg-form-offset">
         <div class="container">
             <form-retarget-component :cities='@json($cities)'
                                      :form_id="'service__form_2'"

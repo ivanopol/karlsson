@@ -72,14 +72,6 @@
     .retargeting-form {
         margin-bottom: 20px;
 
-        @media only screen and (min-width: 580px) {
-            .form-wrapper {
-                padding: 80px 0 28px;
-                width: 450px;
-                border-radius: 30px;
-                box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.16), 0 0 30px 10px rgba(0, 0, 0, 0.08);
-            }
-        }
 
         p.form-title {
             color: #000;
@@ -93,7 +85,7 @@
 
         @media only screen and (min-width: 580px) {
             p.form-title {
-                color: #000;
+                color: #fff;
                 margin-bottom: 30px;
                 font-size: 34px;
             }
@@ -105,7 +97,7 @@
 
         form {
             margin-top: 20px;
-            margin-bottom: 40px;
+            margin-bottom: 0;
         }
         .block-text {
             padding-top: 30px;
@@ -160,6 +152,33 @@
 
             form > * {
                 //   width: 100%;
+            }
+        }
+    }
+
+    @media only screen and (min-width: 581px) {
+        .mobile_white_bg {
+            width: 480px;
+            padding: 30px;
+            border: 10px solid #fff;
+            border-radius: 15px;
+            margin: 80px auto;
+
+            .with-pre-title {
+                h2 {
+                    font-size: 36px;
+                    color: #fff;
+                    margin-bottom: 0;
+                }
+
+                .pre-title {
+                    font-family: OpenSansSemiBold, Helvetica, sans-serif;
+                    color: #b2b4b3;
+                    padding: 0; // 0 30px
+                    text-align: left;
+                    font-size: 18px;
+                    margin-bottom: 0;
+                }
             }
         }
     }

@@ -55,6 +55,12 @@ h1 {
     color: #e42127;
 }
 
+@media only screen and (min-width: 580px) {
+    .pre-title-highlight {
+        font-size: 40px;
+    }
+}
+
 @media only screen and (max-width: 580px) {
     .ad_h1 {
         font-size: 6.3vw;
@@ -1038,6 +1044,10 @@ footer {
         right: 0;
         top: -120px;
         bottom: 0;
+    }
+    .bg-dark-offset.bg-form-offset:before {
+        top: -515px;
+        height: 370%;
     }
 
 }
