@@ -141,7 +141,7 @@
         .container_bg_gray_desktop:before {
             content: '';
             display: block;
-            z-index: -2;
+            z-index: -3;
             background: #ebedec;
             max-width: 100%;
             width: 100vw;

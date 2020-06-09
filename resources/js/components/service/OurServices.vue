@@ -1,33 +1,35 @@
 <template>
-    <section class="container container_bg_dark">
-        <div class="car-services">
-            <h2>Услуги</h2>
-            <div class="container">
-                <badger-accordion ref="myAccordion">
-                    <badger-accordion-item v-for="(service, index) in activeServices" v-bind:key="service.id">
-                        <template slot="header">{{service.title}}</template>
-                        <template slot="content">
-                            <ul>
-                                <li v-for="list in service.list"><check-icon></check-icon> <span v-html="getPrice(list.title, list.price)"></span></li>
-                            </ul>
-                            <div class="service__contacts-wrap">
-                                <a :id="form_id + '_get_modal_' + index" class="btn btn-primary btn-position" v-on:click.prevent="show(service.title, form_id + '_' + index)">Записаться на сервис</a>
-                                <a :id="form_id + '_call_' + index " :href="'tel:' + cities.active.phone" class="btn btn-primary callibri_phone btn-position green">Позвонить</a>
-                            </div>
-                        </template>
-                    </badger-accordion-item>
-                </badger-accordion>
+    <section class="container_bg_red_desktop">
+        <div class="container container_bg_dark">
+            <div class="car-services">
+                <h2>Услуги</h2>
+                <div class="container">
+                    <badger-accordion ref="myAccordion">
+                        <badger-accordion-item v-for="(service, index) in activeServices" v-bind:key="service.id">
+                            <template slot="header">{{service.title}}</template>
+                            <template slot="content">
+                                <ul>
+                                    <li v-for="list in service.list"><check-icon></check-icon> <span v-html="getPrice(list.title, list.price)"></span></li>
+                                </ul>
+                                <div class="service__contacts-wrap">
+                                    <a :id="form_id + '_get_modal_' + index" class="btn btn-primary btn-position" v-on:click.prevent="show(service.title, form_id + '_' + index)">Записаться на сервис</a>
+                                    <a :id="form_id + '_call_' + index " :href="'tel:' + cities.active.phone" class="btn btn-primary callibri_phone btn-position green">Позвонить</a>
+                                </div>
+                            </template>
+                        </badger-accordion-item>
+                    </badger-accordion>
+                </div>
+                <modal name="form-callback3" height="auto" :adaptive="true">
+                    <div class="close" @click="hide"></div>
+                    <form-buy2-component :cities="cities"
+                                         :form_title="form_title"
+                                         :form_id="form_id"
+                                         :button_text="button_text"
+                                         :is_comment="is_comment"
+                                         :form_class="'mobile_white_bg'"
+                    ></form-buy2-component>
+                </modal>
             </div>
-            <modal name="form-callback3" height="auto" :adaptive="true">
-                <div class="close" @click="hide"></div>
-                <form-buy2-component :cities="cities"
-                                     :form_title="form_title"
-                                     :form_id="form_id"
-                                     :button_text="button_text"
-                                     :is_comment="is_comment"
-                                     :form_class="'mobile_white_bg'"
-                ></form-buy2-component>
-            </modal>
         </div>
     </section>
 </template>
@@ -370,6 +372,25 @@
     @media only screen and (min-width: 580px) {
         .service__contacts-wrap {
             width: 300px;
+        }
+
+        .container_bg_red_desktop {
+            position: relative;
+
+            &:before {
+                content: "";
+                display: block;
+                z-index: -2;
+                background-color: #e22227;
+                max-width: 100%;
+                width: 100vw;
+                height: 110%;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 260px;
+                bottom: 0;
+            }
         }
     }
 
