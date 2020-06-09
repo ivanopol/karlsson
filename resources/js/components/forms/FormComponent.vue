@@ -90,7 +90,7 @@
         }
 
         form {
-            margin-bottom: 40px;
+           // margin-bottom: 40px;
         }
 
         .block-text {
@@ -127,6 +127,20 @@
 
             form > * {
              //   width: 100%;
+            }
+        }
+    }
+
+    @media only screen and (min-width: 581px) {
+        .mobile_white_bg {
+            width: 50%;
+            padding: 30px;
+            border: 10px solid #fff;
+            border-radius: 15px;
+            margin: 0 auto;
+
+            h2 {
+                font-size: 36px;
             }
         }
     }

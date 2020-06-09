@@ -88,6 +88,12 @@
             display: block;
         }
 
+        @media only screen and (min-width: 580px) {
+            h2 .t-block {
+                display: inline;
+            }
+        }
+
         .retarget-trigger {
             padding-top: 60px;
         }
