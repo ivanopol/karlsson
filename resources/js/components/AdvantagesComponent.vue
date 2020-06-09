@@ -155,7 +155,7 @@
             }
         }
 
-        @media only screen and (min-width: 961px) {
+        @media only screen and (min-width: 960px) {
             &::before {
                 margin-top: -295px;
             }
@@ -193,7 +193,7 @@
 
         @media only screen and (min-width: 580px) {
             & {
-                padding: 80px 0;
+                padding: 80px 0 0;
                 background-color: transparent;
                 margin: 0;
             }
@@ -204,7 +204,7 @@
             }
 
             h2 {
-                font-size: 48px;
+                font-size: 36px;
                 line-height: 1.3;
                 color: #fff;
                 margin-bottom: 0;
@@ -216,7 +216,6 @@
                 background-color: #FFF;
                 border-radius: 15px;
                 flex-wrap: nowrap;
-                margin-bottom: 80px;
                 overflow: hidden;
                 li {
                     width: 25%;

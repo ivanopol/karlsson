@@ -1012,11 +1012,40 @@ footer {
     background-color: #424242;
 }
 
+.bg-dark-offset {
+    position: relative;
+}
+
 @media only screen and (min-width: 580px) {
+
     .container_bg_dark {
+        background-color: transparent;
+    }
+
+    .bg-dark-offset:before {
+        content: '';
+        display: block;
+        z-index: -1;
         background: rgb(0,0,0);
         background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(69,69,69,1) 100%);
+        max-width: 100%;
+        width: 100vw;
+        height: 120%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -120px;
+        bottom: 0;
     }
+
+}
+
+
+@media only screen and (min-width: 580px) and (max-width: 959px) {
+/*    .container_bg_dark {
+        background: rgb(0,0,0);
+        background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(69,69,69,1) 100%);
+    }*/
 
 }
 

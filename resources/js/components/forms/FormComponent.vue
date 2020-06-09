@@ -134,10 +134,11 @@
     @media only screen and (min-width: 581px) {
         .mobile_white_bg {
             width: 50%;
+            max-width: 480px;
             padding: 30px;
             border: 10px solid #fff;
             border-radius: 15px;
-            margin: 0 auto;
+            margin: 80px auto;
 
             h2 {
                 font-size: 36px;

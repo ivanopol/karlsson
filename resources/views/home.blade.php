@@ -11,7 +11,7 @@
         <advantages-component></advantages-component>
     </div>
 
-    <div class="container_bg_dark">
+    <div class="container_bg_dark bg-dark-offset">
         <div class="container">
             <!-- :form_h1="'<span class=\'c_orange\'>Заполните</span> форму'" -->
             <form-component :cities='@json($cities)'
