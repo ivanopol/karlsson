@@ -213,9 +213,7 @@
         margin: 18px auto 0;
         border-radius: 8px;
         font-size: 16px;
-        max-width: 340px;
         padding: 19px;
-
     }
 
     .warning {

@@ -1,15 +1,14 @@
 <template>
-    <footer v-bind:class="[ footer_class ]">
-        <div class="footer block">
-            <div class="center">
-                <h2>Карлссон всегда на связи</h2>
-                <p>У&nbsp;вас есть вопросы? Пообщайтесь со&nbsp;специалистом по&nbsp;телефону<br><a :href="'tel:' + phone" class="thin-link brand-color block callibri_tel">{{phone_formatted}}</a><br>
-                <div class="footer-callback-wrap" v-show="!mobile">
-                    <a href="#" id="footer_request_callback" class="btn btn btn-primary btn-position green event" v-on:click.prevent="show('Заказать звонок', 'footer__modal_callback', 'Отправить', 1, 'callback')" >Заказать звонок</a>
-                </div>
-                <p>Карлссон ближе, чем кажется<br>Проложите маршрут до ближайшего салона</p>
-                <div class="route-button-wrap">
-                    <a id="create_route" :class="'btn event ' + ym_btn_class" v-on:click.prevent="getRoute()">Проложить маршрут</a>
+    <footer v-bind:class="[ footer_class ]" >
+        <div class="container">
+            <div class="footer block">
+                <div class="center">
+                    <h2><span class="t-block-2">Карлссон всегда</span> на связи</h2>
+                    <p>У&nbsp;вас есть вопросы? Пообщайтесь со&nbsp;специалистом по&nbsp;телефону<br><a :href="'tel:' + phone" class="thin-link brand-color block callibri_tel">{{phone_formatted}}</a>
+                    <p>Карлссон ближе, чем кажется. Проложите маршрут до ближайшего салона</p>
+                    <div class="route-button-wrap">
+                        <a id="create_route" :class="'btn event ' + ym_btn_class" v-on:click.prevent="getRoute()">Проложить маршрут</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -17,16 +16,6 @@
                               :button="ym_button"
                               :btn_class="ym_btn_class"
         ></yandex-map-component>
-        <modal name="form-callback-footer" height="auto" :adaptive="true">
-            <div class="close" @click="hide"></div>
-            <form-buy2-component :cities="cities"
-                                 :form_title="form_title"
-                                 :form_id="form_id"
-                                 :button_text="button_text"
-                                 :form_type="form_type"
-                                 :goal="goal">
-            </form-buy2-component>
-        </modal>
     </footer>
 </template>
 
@@ -144,11 +133,10 @@
     }
 
     footer {
-        display: grid;
+        display: block;
     }
 
     .footer {
-
         border-radius: 10px;
         padding: 9vw 0;
         margin: 3.63vw 3.63vw 7.26vw;
@@ -193,9 +181,45 @@
         }
 
         @media only screen and (min-width: 580px) {
+
+            & {
+                padding: 50px;
+                margin: 0 15px 20px;
+            }
+
+
+            h2 {
+                margin: 0 auto;
+                font-size: 36px;
+                padding: 0 0 50px;
+
+                .t-block-2 {
+                    display: block;
+                }
+            }
+
+            p {
+                /*padding-top: 20px;*/
+                font-family: LadaPragmaticaRegular, Helvetica, sans-serif;
+                font-size: 22px;
+                padding: 0;
+                text-align: left;
+            }
+
+            .route-button-wrap {
+                width: 300px;
+                margin: 0 auto;
+            }
+
             a {
                 width: auto;
             }
+        }
+    }
+
+    @media only screen and (min-width: 580px) {
+        footer {
+            display: block;
         }
     }
 

@@ -64,43 +64,6 @@
         margin-top: 25px;
     }
 
-/*    .form-modal {
-        p.form-title {
-            color: #000;
-            margin-bottom: 30px;
-            font-family: PragmaticaLightCBold, Helvetica, sans-serif;
-            text-transform: uppercase;
-            text-align: center;
-            font-size: 24px;
-            line-height: 1.3;
-        }
-
-        @media only screen and (min-width: 580px) {
-            p.form-title {
-                color: #000;
-                margin-bottom: 30px;
-                font-size: 34px;
-            }
-        }
-
-        @media only screen and (min-width: 1367px) {
-
-        }
-
-        form {
-            margin-bottom: 40px;
-        }
-        .block-text {
-            padding-top: 30px;
-            padding-right: 50px;
-        }
-
-        .validation-message-wrap {
-            height: auto;
-        }
-    }*/
-
-
     .form-modal {
         p.form-title {
             color: #fff;
