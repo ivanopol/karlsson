@@ -81,7 +81,7 @@
             font-size: 6.8vw; // 28px;
             line-height: 1.2;
             text-align: left;
-            padding: 0 30px 80px;  // 0 30px 30px
+            padding: 0 7.25vw 7.25vw;  // 0 30px 30px
         }
 
         .t-block {
@@ -89,6 +89,10 @@
         }
 
         @media only screen and (min-width: 580px) {
+            &::before {
+                max-height: 800px;
+            }
+
             h2 .t-block {
                 display: inline;
             }

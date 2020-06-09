@@ -114,7 +114,8 @@
                 line-height: 1.2;
                 text-align: left;
                 color: #fff;
-                padding: 0 7.25vw; // 0 30px
+                padding: 0 7.25vw 7.25vw; // 0 30px
+                margin: 0;
             }
 
             .form-wrapper {
@@ -133,8 +134,7 @@
 
     @media only screen and (min-width: 581px) {
         .mobile_white_bg {
-            width: 50%;
-            max-width: 480px;
+            width: 480px;
             padding: 30px;
             border: 10px solid #fff;
             border-radius: 15px;
