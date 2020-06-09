@@ -83,8 +83,16 @@
         }
 
         @media only screen and (min-width: 580px) {
+            & {
+                padding: 50px;
+                margin: 10px 15px;
+            }
+
             h2 {
-                margin: 80px auto;
+                margin: 0 auto;
+                font-size: 36px;
+                padding: 0 0 50px;
+
             }
         }
 
@@ -132,14 +140,14 @@
         margin: 0 auto 30px;
     }
 
-    @media only screen and (min-width: 900px) {
+    @media only screen and (min-width: 580px) {
         .resp-double-columns  {
             flex-direction: row;
             margin: 0;
         }
 
         .resp-row {
-            margin: 0 30px 30px 0;
+            margin: 0 30px 0 0;
         }
 
         .resp-row:last-child {
