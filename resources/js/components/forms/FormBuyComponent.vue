@@ -80,7 +80,7 @@
         }
 
         form {
-            margin-bottom: 40px;
+            margin-bottom: 0;
         }
         .block-text {
             padding-top: 30px;

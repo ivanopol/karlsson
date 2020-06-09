@@ -96,7 +96,7 @@
         }
 
         form {
-            margin-top: 20px;
+            margin-top: 0;
             margin-bottom: 0;
         }
         .block-text {
@@ -113,7 +113,7 @@
         .mobile_white_bg {
             background: rgb(41,41,41);
             background: linear-gradient(90deg, rgba(41,41,41,1) 0%, rgba(83,83,83,1) 100%);
-            padding: 9vw 0 7vw;
+            padding: 7vw 0;
             border-radius: 10px;
             border: 6px solid #fff;
             margin: 3.63vw;
@@ -129,7 +129,7 @@
                     padding: 0 7.25vw; // 0 30px
                     text-align: left;
                     font-size: 4.5vw;
-                    margin-bottom: 0;
+                    margin-bottom: 20px;
                 }
             }
 
@@ -177,7 +177,7 @@
                     padding: 0; // 0 30px
                     text-align: left;
                     font-size: 18px;
-                    margin-bottom: 0;
+                    margin-bottom: 20px;
                 }
             }
         }

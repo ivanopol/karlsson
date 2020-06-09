@@ -19,7 +19,7 @@
                         </badger-accordion-item>
                     </badger-accordion>
                 </div>
-                <modal name="form-callback3" height="auto" :adaptive="true">
+                <modal name="form-callback3" height="auto" :width="490" :adaptive="true">
                     <div class="close" @click="hide"></div>
                     <form-buy2-component :cities="cities"
                                          :form_title="form_title"

@@ -221,6 +221,7 @@
                 border-radius: 15px;
                 flex-wrap: nowrap;
                 overflow: hidden;
+                margin: 0 15px;
                 li {
                     width: 25%;
                     text-align: center;
