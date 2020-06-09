@@ -7,6 +7,20 @@
                         <logo-karlsson :theme="theme"></logo-karlsson>
                     </a>
                 </div>
+
+                <nav class="nav">
+                    <ul>
+                        <li>
+                            <a href="#advantages">Преимущества</a>
+                        </li>
+                        <li>
+                            <a href="#services">Услуги</a>
+                        </li>
+                        <li>
+                            <a href="#reviews">Отзывы</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </header>
@@ -59,11 +73,11 @@
             .logo-wrap-row {
                 padding: 15px;
                 display: flex;
-                justify-content: space-between;
+                justify-content: flex-start;
             }
 
             .logo-karlsson {
-                width: 49%;
+               // width: 49%;
                 height: 25px;
                 display: flex;
                 justify-content: flex-start;
@@ -81,10 +95,36 @@
                 }
             }
 
+            @media only screen and (max-width: 1024px) {
+                .nav {
+                    display: none;
+                }
+            }
+
+            @media only screen and (min-width: 1025px) {
+                .nav {
+                    margin-left: 70px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    ul {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        li {
+                            margin-right: 25px;
+                            a {
+                                font-family: OpenSansExtraBold, Helvetica, sans-serif;
+                                color: #000;
+                            }
+                        }
+                    }
+                }
+            }
 
             @media only screen and (min-width: 1367px) {
                 .logo-karlsson {
-                    width: 25%;
+                   // width: 35%;
                 }
 
             }

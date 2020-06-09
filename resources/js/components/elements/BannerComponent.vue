@@ -36,7 +36,7 @@
     .banner {
         max-width: 100%;
         position: relative;
-        overflow: hidden;
+
         border-radius: 10px;
         margin: 0 3.63vw;
         z-index: 2;
@@ -132,6 +132,22 @@
                 .banner-title-white {
                     font-size: 4.2vw;
                 }
+            }
+        }
+    }
+
+    @media only screen and (min-width: 1025px) {
+        .banner {
+            &:after {
+                content: "";
+                width: 219px;
+                height: 85px;
+                background: url(/build/images/spanner.png) no-repeat;
+                background-size: contain;
+                position: absolute;
+                top: -21px;
+                right: -91px;
+                transform: rotate(-141deg);
             }
         }
     }

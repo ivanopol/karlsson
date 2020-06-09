@@ -2,7 +2,7 @@
     <section class="container_bg_red_desktop">
         <div class="container container_bg_dark">
             <div class="car-services">
-                <h2>Услуги</h2>
+                <h2 id="services">Услуги</h2>
                 <div class="container">
                     <badger-accordion ref="myAccordion">
                         <badger-accordion-item v-for="(service, index) in activeServices" v-bind:key="service.id">

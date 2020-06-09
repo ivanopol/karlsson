@@ -1,7 +1,7 @@
 <template>
     <section class="container container_bg_dark">
         <div class="trust-us">
-            <h2>Нам доверяют</h2>
+            <h2 id="reviews">Нам доверяют</h2>
             <div class="resp-double-columns">
                 <div class="resp-row" v-for="service in ratings" v-bind:key="service.id">
                     <div class="resp-left-column"><img :src="service.path" :alt="service.alt"></div>

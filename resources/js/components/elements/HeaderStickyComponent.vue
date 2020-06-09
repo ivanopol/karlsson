@@ -61,7 +61,7 @@
         -o-transition: all ease-in 0.2s;
         transition: all ease-in 0.2s;
 
-        height: 100px;
+        height: 113px;
         background-color: #fff;
         display: flex;
         align-items: flex-end;
@@ -81,7 +81,7 @@
         }
 
         .logo-wrap {
-            padding: 10px 15px 6px;
+            padding: 15px;
             display: flex;
             justify-content: space-between;
             opacity: 0;
@@ -108,10 +108,20 @@
                 }
             }
 
+            @media only screen and (max-width: 580px) {
+                & {
+                    padding: 10px 15px;
+                }
+
+                .logo-karlsson {
+                    width: 47%;
+                }
+            }
+
 
             @media only screen and (min-width: 1366px) {
                 .logo-karlsson {
-                    width: 25%;
+                    width: 35%;
                 }
             }
 
@@ -121,6 +131,13 @@
             }
             &.light {
                 background-color: #fff;
+            }
+        }
+
+
+        @media only screen and (max-width: 580px) {
+            & {
+                height: 105px;
             }
         }
 

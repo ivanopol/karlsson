@@ -24,19 +24,6 @@
             </ul>
         </section>
 
-        <section id="panel-desktop" >
-            <div class="panel-wrap">
-                <ul :class="theme">
-                    <li class="menu-wrap" @click="toggleMenu">
-                        <div id="menu_desktop_btn" class="menu-desktop event"></div>
-                    </li>
-                    <li class="route-map" @click="toggleMapWindow">
-                        <div id="menu_route_btn" class="route-desktop event"></div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
         <section id="menu" :class="{ active: open }">
             <div id="menu_window_close" class="close event" @click="close"></div>
             <div class="menu_wrap">
@@ -56,39 +43,6 @@
                             </li>
                         </ul>
                     </div>
-
-                    <div class="other_links">
-                        <ul>
-                            <li>
-                                <a id="menu_service" :href="'/' + cities.active.value + '/service'" class="event">
-                                    <div class="title">
-                                        <span><icon-spanner></icon-spanner> СЕРВИС</span>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="other_links_2">
-                        <ul>
-                            <li>
-                                <a id="menu_main" :href="'/' + cities.active.value" class="event"><div class="title">Главная страница</div></a>
-                            </li>
-                            <li>
-                                <a id="menu_contacts" :href="'/' + cities.active.value + '/contacts'" class="event"><div class="title">Контакты</div></a>
-                            </li>
-                            <li>
-                                <a id="menu_stocks" :href="'/' + cities.active.value + '/stocks'" class="event"><div class="title">Акции</div></a>
-                            </li>
-                            <li>
-                                <a id="menu_news" :href="'/' + cities.active.value + '/news'" class="event"><div class="title">Новости</div></a>
-                            </li>
-                            <li>
-                                <a id="menu_privacy" :href="'/' + cities.active.value + '/privacy'" class="event"><div class="title font-tiny">Политика конфиденциальности</div></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="copyright">Разработано в Брайт Парке<br>Разработано с любовью</div>
                 </div>
             </div>
         </section>
@@ -703,59 +657,6 @@ export default {
         }
     }
 
-    #panel-desktop {
-        position: absolute;
-        margin: auto;
-        left: 0;
-        right: 0;
-        width: 100%;
-        max-width: 1366px;
-        padding-right: 10px;
-        z-index: 40;
-        top: 100px;
-
-/*        &.scroll {
-            top: 100px;
-            .panel-wrap {
-                position: fixed;
-            }
-        }*/
-
-        .panel-wrap {
-
-            position: fixed;
-            ul {
-                display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
-                padding: 0;
-
-                li {
-                    text-align: center;
-                    margin: 0;
-
-                    & > a div,
-                    & > div {
-                        width: 64px;
-                        height: 64px;
-                        display: block;
-                        margin: 0 auto 2px;
-                        font-weight: normal;
-                        cursor:pointer;
-                    }
-
-                    & > a span,
-                    & > span {
-                        font-size: 12px;
-                        font-weight: normal;
-                    }
-
-                }
-            }
-        }
-    }
-
-
     #panel {
         display: block;
         position: fixed;
@@ -836,7 +737,9 @@ export default {
             font-weight: bold;
             padding: 12px;
             box-sizing: content-box;
-            border-radius: 20px;
+            border-radius:40px;
+            background-color: #fff;
+            box-shadow: 0 0 16px 0 #00000052;
 
             &:before,
             &:after {
@@ -851,7 +754,7 @@ export default {
             &:before {
                 -webkit-transform: rotate(-45deg);
                 transform: rotate(-45deg);
-                top: 20px;
+                top: 21px;
                 left: 10px;
             }
 
@@ -859,7 +762,7 @@ export default {
                 -webkit-transform: rotate(45deg);
                 transform: rotate(45deg);
                 left: 10px;
-                top: 20px;
+                top: 21px;
             }
         }
 
@@ -886,32 +789,6 @@ export default {
         #panel {
             display: block;
         }
-
-/*
-        ._orinationRight_25.wrap_mW {
-            right: 0;
-            display: none;
-        }
-
-        .label_39._bottom_3v._pad100_GR, .label_39._left_2d._pad100_GR, .label_39._right_1y._pad100_GR {
-            right: 30px;
-            left: auto;
-            display: none;
-        }
-
-        #jcont {
-            bottom: 50px !important;
-            z-index: 30 !important;
-        }
-
-        .globalClass_ET .mobileContainer_2k {
-            z-index: 30 !important;
-        }
-*/
-
-        #panel-desktop {
-            display: none;
-        }
     }
 
     @media only screen and (min-width: 1025px) {
@@ -919,10 +796,6 @@ export default {
             display: none;
         }
 
-        #panel-desktop {
-            display: flex;
-            justify-content: flex-end;
-        }
     }
 
     @media only screen and (min-width: 580px) {
