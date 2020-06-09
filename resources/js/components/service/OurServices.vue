@@ -367,6 +367,12 @@
         margin-top: 30px;
     }
 
+    @media only screen and (min-width: 580px) {
+        .service__contacts-wrap {
+            width: 300px;
+        }
+    }
+
     .car-services {
         border-radius: 10px;
         padding: 9vw 0;
@@ -388,8 +394,15 @@
         }
 
         @media only screen and (min-width: 580px) {
+            & {
+                padding: 50px;
+                margin: 10px 15px;
+            }
+
             h2 {
-                margin: 80px auto;
+                margin: 0 auto;
+                font-size: 36px;
+                padding: 0 0 50px;
             }
         }
     }
@@ -437,11 +450,10 @@
         border-bottom: 1px solid #b7b7b7;
     }
 
-    @media only screen and (min-width: 700px) {
+    @media only screen and (min-width: 580px) {
         .component-badger-accordion {
             margin: 0 auto;
-            width: 65%;
-            max-width: 700px;
+            width: 100%;
         }
     }
 
@@ -452,15 +464,9 @@
                 padding: 12px 5px;
                 border-top: 1px solid #b7b7b7;
                 justify-content: space-between;
-            }
-        }
-    }
 
-    @media only screen and (min-width: 1100px) {
-        .badger-accordion__header {
-            .js-badger-accordion-header {
-                .badger-accordion-toggle {
-                    font-size: 22px;
+                .badger-accordion-title {
+                    font-size: 130%;
                 }
             }
         }
@@ -486,5 +492,28 @@
         }
     }
 
+    @media only screen and (min-width: 1100px) {
+        .badger-accordion__header {
+            .js-badger-accordion-header {
+                .badger-accordion-toggle {
+                    font-size: 22px;
+                }
+            }
+        }
 
+        .js-badger-accordion-panel-inner {
+            ul {
+                li {
+                    .check {
+                        width: 20px;
+                        height: 20px;
+                    }
+
+                    span {
+                        font-size: 110%;
+                    }
+                }
+            }
+        }
+    }
 </style>

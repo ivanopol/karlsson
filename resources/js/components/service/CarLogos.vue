@@ -109,7 +109,7 @@
 
             & {
                 padding: 50px;
-                margin: 0 15px;
+                margin: 10px 15px;
             }
 
             h2 {
@@ -145,7 +145,7 @@
             background: #ebedec;
             max-width: 100%;
             width: 100vw;
-            height: 200%;
+            height: 400%;
             position: absolute;
             left: 0;
             right: 0;
