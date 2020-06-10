@@ -1,6 +1,6 @@
 <template>
     <section  class="container_bg_gray_desktop">
-        <div class="container container_bg_red">
+        <div class="container-no-overflow container_bg_red with-spanner">
             <div class="car-logos">
                 <h2><span class="t-block-2">Марки автомобилей,</span> которые мы обслуживаем</h2>
                 <ul>
@@ -65,6 +65,23 @@
 </script>
 
 <style scoped lang="scss">
+    @media only screen and (min-width: 1025px) {
+        .with-spanner {
+            position: relative;
+
+            &:after {
+                content: "";
+                width: 219px;
+                height: 85px;
+                background: url(/build/images/spanner.png) no-repeat;
+                background-size: contain;
+                position: absolute;
+                top: 12px;
+                right: -36px;
+                transform: rotate(40deg);
+            }
+        }
+    }
 
     .car-logos {
         border-radius: 10px;
